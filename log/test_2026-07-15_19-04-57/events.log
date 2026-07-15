@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000152] (drone_map) JobQueued: {'identifier': 'drone_map', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_map', '/home/ake/sim_drone/ake_drone_sim/install/drone_map')])}
+[0.000396] (drone_map) JobStarted: {'identifier': 'drone_map'}
+[0.024655] (drone_map) JobEnded: {'identifier': 'drone_map', 'rc': 0}
+[0.025321] (-) EventReactorShutdown: {}

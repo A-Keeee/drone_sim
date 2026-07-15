@@ -20,7 +20,7 @@ ake_drone_sim/
 │   ├── drone_map/            # 3D voxel grid 与模拟 LiDAR
 │   ├── drone_planner/        # 3D A*、B-spline、滚动预测规划器
 │   └── drone_visualization/  # Marker、RViz 与 bringup 资源安装
-├── launch/                   # sim.launch.py、open.launch.py
+├── launch/                   # sim、open、narrow、random 场景启动文件
 ├── config/                   # 物理、传感器、地图和规划参数
 ├── rviz/                     # RViz2 配置
 ├── scripts/                  # 数据记录与绘图
@@ -73,6 +73,23 @@ ros2 launch drone_visualization open.launch.py
 ```bash
 ros2 launch drone_visualization narrow.launch.py
 ```
+
+可复现随机三维场景（推荐用于观察完整规划链路）：
+
+```bash
+ros2 launch drone_visualization random.launch.py
+```
+
+另开终端发布穿越地图的目标：
+
+```bash
+source /opt/ros/humble/setup.bash
+source /home/ake/sim_drone/ake_drone_sim/install/setup.bash
+ros2 topic pub --once /drone/goal geometry_msgs/msg/PoseStamped \
+"{header: {frame_id: map}, pose: {position: {x: 8.0, y: 0.0, z: 1.5}, orientation: {w: 1.0}}}"
+```
+
+随机场景默认用种子 `20260715` 生成 14 个盒体，其中 60% 偏置在起点到目标点的直线路径附近，因此能明显看到红色 A* 路径绕行、青色 B-spline 平滑路径、橙色 MPC 预测和绿色实际轨迹。保持种子不变则每次启动完全一致；临时切换地图可直接运行 `ros2 launch drone_visualization random.launch.py seed:=42`，也可以修改 [`config/random.yaml`](config/random.yaml) 中的生成参数。
 
 无界面运行时增加 `rviz:=false`。命令行发布目标：
 
@@ -151,7 +168,7 @@ SE(3) 控制器计算：
 - z：`[0, 5] m`
 - 分辨率：`0.2 m`
 
-`/map/obstacles` 发布所有占用体素中心的 `PointCloud2`。默认场景含 5 个三维盒体，位于起点到 `(8,0,1.5)` 之间，并包含高障碍、立柱和顶置障碍。
+`/map/obstacles` 发布所有占用体素中心的 `PointCloud2`。默认场景含 5 个三维盒体，位于起点到 `(8,0,1.5)` 之间，并包含高障碍、立柱和顶置障碍。`random.launch.py` 还支持固定种子的随机盒体地图，可配置障碍数量、中心/尺寸范围、端点净空和直线路径附近的障碍比例。
 
 模拟 LiDAR 默认为 120° 水平、60° 垂直、121×31 线束、10 Hz、8 m 量程。每条射线在 voxel grid 中步进，只返回第一个命中体素，因而支持遮挡。输出点云位于 `lidar_link`；规划器根据融合位姿转换到 `map`。
 
@@ -197,6 +214,7 @@ ros2 run drone_visualization waypoint_mission.py --timeout 90
 - 质量、惯量、臂长、推力/扭矩系数和电机时间常数；
 - IMU/GPS 噪声和固定随机种子；
 - voxel 分辨率、地图范围和 6×N 障碍物数组；
+- 随机场景的障碍数量、固定种子、尺寸范围、端点净空和走廊偏置比例；
 - LiDAR FOV、线束数、量程、噪声和漏检率；
 - A* 搜索预算、安全距离、参考速度和巡航高度。
 

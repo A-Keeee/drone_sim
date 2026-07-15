@@ -1,53 +1,424 @@
 Panels:
   - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Environment1
+        - /Perception1
+        - /Planning1
+        - /Vehicle State1
+      Splitter Ratio: 0.52
+    Tree Height: 620
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.55
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+
 Visualization Manager:
   Class: ""
-  Global Options:
-    Fixed Frame: map
   Displays:
-    - Class: rviz_default_plugins/Grid
-      Name: Grid
+    - Class: rviz_common/Group
+      Displays:
+        - Alpha: 0.45
+          Cell Size: 1
+          Class: rviz_default_plugins/Grid
+          Color: 130; 130; 135
+          Enabled: true
+          Line Style:
+            Line Width: 0.03
+            Value: Lines
+          Name: Ground Grid (z=0)
+          Normal Cell Count: 0
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Plane: XY
+          Plane Cell Count: 20
+          Reference Frame: map
+          Value: true
+        - Class: rviz_default_plugins/TF
+          Enabled: true
+          Frame Timeout: 15
+          Marker Scale: 0.45
+          Name: TF (map/base_link/lidar_link)
+          Show Arrows: true
+          Show Axes: true
+          Show Names: true
+          Update Interval: 0
+          Value: true
       Enabled: true
-    - Class: rviz_default_plugins/PointCloud2
-      Name: Voxel Map
-      Topic: /map/obstacles
-      Size (m): 0.12
+      Name: Environment
+
+    - Class: rviz_common/Group
+      Displays:
+        - Alpha: 0.85
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 3
+            Min Value: 0
+            Value: true
+          Axis: Z
+          Channel Name: z
+          Class: rviz_default_plugins/PointCloud2
+          Color: 120; 130; 145
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Name: Occupied Voxels
+          Position Transformer: XYZ
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.14
+          Style: Boxes
+          Topic:
+            Depth: 1
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /map/obstacles
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: true
+        - Class: rviz_default_plugins/MarkerArray
+          Enabled: false
+          Name: Obstacle Geometry (optional)
+          Namespaces:
+            All enabled: true
+          Queue Size: 10
+          Topic:
+            Depth: 1
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /map/obstacle_markers
+          Value: false
       Enabled: true
-    - Class: rviz_default_plugins/PointCloud2
-      Name: Simulated LiDAR
-      Topic: /drone/lidar/points
-      Size (m): 0.05
+      Name: 3D Voxel Map
+
+    - Class: rviz_common/Group
+      Displays:
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 4
+            Min Value: -2
+            Value: true
+          Axis: Z
+          Channel Name: z
+          Class: rviz_default_plugins/PointCloud2
+          Color: 255; 90; 20
+          Color Transformer: FlatColor
+          Decay Time: 0.35
+          Enabled: true
+          Invert Rainbow: false
+          Name: Forward 3D LiDAR Returns
+          Position Transformer: XYZ
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.075
+          Style: Spheres
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Best Effort
+            Value: /drone/lidar/points
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: true
       Enabled: true
-    - Class: rviz_default_plugins/Path
-      Name: Planned Path
-      Topic: /drone/planned_path
+      Name: Perception
+
+    - Class: rviz_common/Group
+      Displays:
+        - Alpha: 0.9
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 230; 45; 45
+          Enabled: true
+          Head Diameter: 0.12
+          Head Length: 0.08
+          Length: 0.16
+          Line Style: Lines
+          Line Width: 0.035
+          Name: Global A-star Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 230; 45; 45
+          Pose Style: None
+          Radius: 0.03
+          Shaft Diameter: 0.025
+          Shaft Length: 0.08
+          Topic:
+            Depth: 5
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/planned_path
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 0; 220; 255
+          Enabled: true
+          Head Diameter: 0.12
+          Head Length: 0.08
+          Length: 0.16
+          Line Style: Lines
+          Line Width: 0.055
+          Name: Smoothed B-spline
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 0; 220; 255
+          Pose Style: None
+          Radius: 0.03
+          Shaft Diameter: 0.025
+          Shaft Length: 0.08
+          Topic:
+            Depth: 5
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/bspline_path
+          Value: true
+        - Alpha: 0.95
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 255; 170; 0
+          Enabled: true
+          Head Diameter: 0.1
+          Head Length: 0.07
+          Length: 0.14
+          Line Style: Lines
+          Line Width: 0.035
+          Name: MPC Prediction
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 170; 0
+          Pose Style: None
+          Radius: 0.025
+          Shaft Diameter: 0.02
+          Shaft Length: 0.07
+          Topic:
+            Depth: 10
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/mpc_prediction_path
+          Value: true
       Enabled: true
-    - Class: rviz_default_plugins/Path
-      Name: B-spline Path
-      Topic: /drone/bspline_path
+      Name: Planning
+
+    - Class: rviz_common/Group
+      Displays:
+        - Class: rviz_default_plugins/MarkerArray
+          Enabled: true
+          Name: Drone + Goal + Safe Goal
+          Namespaces:
+            All enabled: true
+          Queue Size: 20
+          Topic:
+            Depth: 10
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/markers
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 40; 255; 75
+          Enabled: true
+          Head Diameter: 0.1
+          Head Length: 0.07
+          Length: 0.14
+          Line Style: Lines
+          Line Width: 0.045
+          Name: Fused Flight Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 40; 255; 75
+          Pose Style: None
+          Radius: 0.025
+          Shaft Diameter: 0.02
+          Shaft Length: 0.07
+          Topic:
+            Depth: 10
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/path
+          Value: true
+        - Alpha: 0.45
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 210; 210; 210
+          Enabled: false
+          Head Diameter: 0.1
+          Head Length: 0.07
+          Length: 0.14
+          Line Style: Lines
+          Line Width: 0.025
+          Name: Ground-truth Path (debug)
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 210; 210; 210
+          Pose Style: None
+          Radius: 0.025
+          Shaft Diameter: 0.02
+          Shaft Length: 0.07
+          Topic:
+            Depth: 10
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/ground_truth/path
+          Value: false
+        - Alpha: 1
+          Axes Length: 0.35
+          Axes Radius: 0.025
+          Class: rviz_default_plugins/Odometry
+          Color: 255; 255; 0
+          Enabled: false
+          Keep: 30
+          Name: Fused Odometry Axes (debug)
+          Position Tolerance: 0.05
+          Shape:
+            Alpha: 1
+            Axes Length: 0.35
+            Axes Radius: 0.025
+            Color: 255; 255; 0
+            Head Length: 0.1
+            Head Radius: 0.05
+            Shaft Length: 0.3
+            Shaft Radius: 0.02
+            Value: Axes
+          Topic:
+            Depth: 10
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /drone/odom
+          Value: false
       Enabled: true
-    - Class: rviz_default_plugins/Path
-      Name: Actual Path
-      Topic: /drone/path
-      Enabled: true
-    - Class: rviz_default_plugins/MarkerArray
-      Name: Obstacles
-      Topic: /map/obstacle_markers
-      Enabled: true
-    - Class: rviz_default_plugins/MarkerArray
-      Name: Drone
-      Topic: /drone/markers
-      Enabled: true
-    - Class: rviz_default_plugins/TF
-      Name: TF
-      Enabled: true
+      Name: Vehicle State
+
+  Enabled: true
+  Global Options:
+    Background Color: 24; 27; 33
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 255; 255; 0
     - Class: rviz_default_plugins/SetGoal
-      Name: Goal
-      Topic: /drone/goal
-      Enabled: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /drone/goal
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 13
-      Pitch: 0.6
-      Yaw: 0.8
+      Distance: 14
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 4
+        Y: 0
+        Z: 1.4
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Invert Z Axis: false
+      Name: Debug Orbit View
+      Near Clip Distance: 0.01
+      Pitch: 0.58
+      Target Frame: map
+      Value: Orbit (rviz)
+      Yaw: 0.82
+    Saved:
+      - Class: rviz_default_plugins/Orbit
+        Distance: 15
+        Focal Point:
+          X: 4
+          Y: 0
+          Z: 1.5
+        Name: Oblique Overview
+        Near Clip Distance: 0.01
+        Pitch: 0.55
+        Target Frame: map
+        Value: Orbit (rviz)
+        Yaw: 0.78
+      - Class: rviz_default_plugins/TopDownOrtho
+        Angle: 0
+        Name: Top-down XY
+        Scale: 80
+        Target Frame: map
+        Value: TopDownOrtho (rviz)
+
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 900
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: true
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1440
+  X: 80
+  Y: 50

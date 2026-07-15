@@ -1,0 +1,25 @@
+voxel_map_node:
+  ros__parameters:
+    # Reproducible random 3-D scene. Change this seed for a different layout.
+    use_configured_obstacles: false
+    random_obstacle_count: 14
+    random_seed: 20260715
+
+    # Obstacle centers and box sizes stay inside the common 12 x 8 x 5 m map.
+    random_center_min: [1.0, -3.1, 0.7]
+    random_center_max: [7.3, 3.1, 3.8]
+    random_size_min: [0.45, 0.50, 0.80]
+    random_size_max: [0.90, 1.35, 2.40]
+
+    # Keep takeoff and destination free. Part of the random obstacles is biased
+    # around this segment so the global A* path must visibly detour in 3-D.
+    random_start: [0.0, 0.0, 1.5]
+    random_goal: [8.0, 0.0, 1.5]
+    random_endpoint_clearance: 1.0
+    random_corridor_fraction: 0.60
+    random_corridor_half_width: 0.75
+
+ab_planner_node:
+  ros__parameters:
+    # Slightly slower makes local prediction and LiDAR reactions easier to inspect.
+    reference_speed: 1.0

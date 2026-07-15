@@ -1,0 +1,38 @@
+[0.008s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_map': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_map -- -j20 -l20
+[0.074s] [ 33%] Built target drone_map_core
+[0.085s] Consolidate compiler generated dependencies of target voxel_map_node
+[0.095s] [ 66%] Built target simulated_lidar_node
+[0.097s] [ 83%] Building CXX object CMakeFiles/voxel_map_node.dir/src/voxel_map_node.cpp.o
+[3.529s] [100%] Linking CXX executable voxel_map_node
+[3.726s] [100%] Built target voxel_map_node
+[3.734s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_map' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_map -- -j20 -l20
+[3.740s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_map': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_map
+[3.747s] -- Install configuration: ""
+[3.748s] -- Execute custom install script
+[3.748s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/lib/drone_map/voxel_map_node
+[3.749s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/lib/drone_map/simulated_lidar_node
+[3.749s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/include/ake_drone_sim/pointcloud_utils.hpp
+[3.749s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/include/ake_drone_sim/voxel_grid.hpp
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/library_path.sh
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/library_path.dsv
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/ament_index/resource_index/package_run_dependencies/drone_map
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/ament_index/resource_index/parent_prefix_path/drone_map
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/ament_prefix_path.sh
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/ament_prefix_path.dsv
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/path.sh
+[3.750s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/environment/path.dsv
+[3.751s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/local_setup.bash
+[3.751s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/local_setup.sh
+[3.751s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/local_setup.zsh
+[3.751s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/local_setup.dsv
+[3.751s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/package.dsv
+[3.768s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/ament_index/resource_index/packages/drone_map
+[3.768s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/ament_cmake_export_targets-extras.cmake
+[3.769s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.769s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/drone_mapConfig.cmake
+[3.769s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/drone_mapConfig-version.cmake
+[3.769s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/package.xml
+[3.770s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_map/lib/libdrone_map_core.so
+[3.770s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/export_drone_mapExport.cmake
+[3.770s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_map/share/drone_map/cmake/export_drone_mapExport-noconfig.cmake
+[3.773s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_map' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_map
