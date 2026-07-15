@@ -3,7 +3,7 @@ voxel_map_node:
     # Reproducible random 3-D scene. Change this seed for a different layout.
     use_configured_obstacles: false
     random_obstacle_count: 14
-    random_seed: 20260715
+    random_seed: 20260694
 
     # Obstacle centers and box sizes stay inside the common 12 x 8 x 5 m map.
     random_center_min: [1.0, -3.1, 0.7]
@@ -22,4 +22,4 @@ voxel_map_node:
 ab_planner_node:
   ros__parameters:
     # Slightly slower makes local prediction and LiDAR reactions easier to inspect.
-    reference_speed: 1.0
+    reference_speed: 0.8

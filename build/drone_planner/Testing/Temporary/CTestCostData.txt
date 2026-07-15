@@ -1,2 +1,2 @@
-test_planner 2 2.926
+test_planner 5 1.19259
 ---

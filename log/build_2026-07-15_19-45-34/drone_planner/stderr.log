@@ -1,0 +1,98 @@
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp: In constructor ‘ake_drone_sim::PlannerNode::PlannerNode()’:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:36:34: error: no matching function for call to ‘max(int, long int)’
+   36 |     mpc_config.horizon = std::max(5, declare_parameter("mpc_horizon", 30));
+      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/eigen3/Eigen/src/Core/util/Macros.h:679,
+                 from /usr/include/eigen3/Eigen/Core:19,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+  254 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:36:34: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+   36 |     mpc_config.horizon = std::max(5, declare_parameter("mpc_horizon", 30));
+      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/eigen3/Eigen/src/Core/util/Macros.h:679,
+                 from /usr/include/eigen3/Eigen/Core:19,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:36:34: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+   36 |     mpc_config.horizon = std::max(5, declare_parameter("mpc_horizon", 30));
+      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:65,
+                 from /usr/include/eigen3/Eigen/Core:85,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+ 3461 |     max(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:36:34: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+   36 |     mpc_config.horizon = std::max(5, declare_parameter("mpc_horizon", 30));
+      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:65,
+                 from /usr/include/eigen3/Eigen/Core:85,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+ 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:36:34: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+   36 |     mpc_config.horizon = std::max(5, declare_parameter("mpc_horizon", 30));
+      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:47:32: error: no matching function for call to ‘clamp(long int, int, int)’
+   47 |     command_index_ = std::clamp(
+      |                      ~~~~~~~~~~^
+   48 |         declare_parameter("mpc_command_index", 3), 0, mpc_horizon_ - 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:65,
+                 from /usr/include/eigen3/Eigen/Core:85,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3656:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)’
+ 3656 |     clamp(const _Tp& __val, const _Tp& __lo, const _Tp& __hi)
+      |     ^~~~~
+/usr/include/c++/11/bits/stl_algo.h:3656:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:47:32: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long int’ and ‘int’)
+   47 |     command_index_ = std::clamp(
+      |                      ~~~~~~~~~~^
+   48 |         declare_parameter("mpc_command_index", 3), 0, mpc_horizon_ - 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:65,
+                 from /usr/include/eigen3/Eigen/Core:85,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/common.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/voxel_grid.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/astar3d.hpp:3,
+                 from /home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3674:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&, _Compare)’
+ 3674 |     clamp(const _Tp& __val, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
+      |     ^~~~~
+/usr/include/c++/11/bits/stl_algo.h:3674:5: note:   template argument deduction/substitution failed:
+/home/ake/sim_drone/ake_drone_sim/src/drone_planner/src/ab_planner_node.cpp:47:32: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long int’ and ‘int’)
+   47 |     command_index_ = std::clamp(
+      |                      ~~~~~~~~~~^
+   48 |         declare_parameter("mpc_command_index", 3), 0, mpc_horizon_ - 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/ab_planner_node.dir/build.make:76：CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:185：CMakeFiles/ab_planner_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -14,3 +14,13 @@ TEST(PlanningPipeline, FiveObstacleSplineIsSafe) {
   BSpline spline;spline.setControlPoints(makeSplineControlPoints(result.path,.1),.25);ASSERT_TRUE(spline.valid());
   for(double u=0;u<=spline.maxU();u+=.02)EXPECT_FALSE(inflated.occupiedWorld(spline.position(u)));
 }
+TEST(BSpline, ArcLengthRoundTrip) {
+  std::vector<Eigen::Vector3d> path{{0,0,1},{1,0,1},{2,1,1.5},{3,1,1.5}};
+  BSpline spline;spline.setControlPoints(makeSplineControlPoints(path,.2),.4);
+  ArcLengthTable table;table.build(spline,1000);
+  ASSERT_GT(table.length(),2.5);
+  for(double fraction:{0.0,.1,.35,.7,1.0}){
+    const double length=fraction*table.length();
+    EXPECT_NEAR(table.lengthFromU(table.uFromLength(length)),length,2e-3);
+  }
+}

@@ -22,6 +22,7 @@ class ArcLengthTable {
   void build(const BSpline &spline, int samples = 600);
   double length() const { return lengths_.empty()?0.0:lengths_.back(); }
   double uFromLength(double length) const;
+  double lengthFromU(double u) const;
   double closestU(const BSpline &spline, const Eigen::Vector3d &point, double guess) const;
  private:
   std::vector<double> us_, lengths_;

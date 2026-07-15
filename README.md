@@ -119,6 +119,27 @@ ros2 topic pub --once /drone/goal geometry_msgs/msg/PoseStamped \
 
 RViz2 的 Goal 工具已经配置到 `/drone/goal`；二维点击产生的零高度会被规划器替换为默认巡航高度 1.5 m。
 
+### RViz2 规划路径图例
+
+展开 RViz2 左侧 `Planning` 分组，可以看到：
+
+- 红色细线 `Global A-star Path`：完整静态 voxel map 上的全局 3D A* 路径，对应 `/drone/planned_path`；
+- 青色粗线 `B-spline / Safe A-star Fallback`：碰撞检查通过的 B-spline；如果 B-spline 不安全，则显示最终执行的安全 A* 折线，对应 `/drone/bspline_path`；
+- 橙色粗短线 `Rolling MPC Prediction`：从无人机当前位置开始的局部滚动预测，对应 `/drone/mpc_prediction_path`；
+- 绿色线 `Fused Flight Path`：融合里程计得到的实际历史轨迹，对应 `/drone/path`。
+
+青色是全局可执行轨迹，会贯穿起点到终点；橙色只表示当前约 1.5 s 的局部预测，因此始终位于无人机附近并随飞行滚动更新。在 A* 安全折线回退模式下，青色路径会与红色路径大范围重合，这是正常现象；青色使用更粗的 Billboard 线覆盖显示。橙色预测现在在 B-spline 和 A* 回退两种模式下都会发布，并使用 transient-local QoS，因此重新打开 RViz2 后也能看到最后一次预测。
+
+如果没有看到路径，先检查左侧 `Planning` 总开关及三个子项是否启用，再执行：
+
+```bash
+ros2 topic echo --once --qos-durability transient_local /drone/planned_path
+ros2 topic echo --once --qos-durability transient_local /drone/bspline_path
+ros2 topic echo --once --qos-durability transient_local /drone/mpc_prediction_path
+```
+
+三条消息的 `header.frame_id` 都应为 `map`，且 `poses` 不为空。只有发布新目标并完成规划后才会产生全局路径；悬停在初始点时路径很短，可能被无人机 Marker 遮挡。
+
 ## 节点和话题
 
 | 包/节点 | 订阅 | 发布 |
@@ -155,9 +176,12 @@ SE(3) 控制器计算：
 
 1. 位置和速度误差生成期望加速度，并叠加轨迹加速度前馈；
 2. 期望合力与 yaw 构造目标旋转矩阵；
-3. 旋转矩阵反对称误差和角速度误差生成三轴力矩；
-4. X 型分配矩阵把总推力/力矩转换为四电机 `omega²` 和 RPM；
-5. 对速度、加速度、倾角、总推力和 RPM 做限幅。
+3. 对相邻期望旋转矩阵差分并低通，得到完整 roll/pitch/yaw 期望角速度；
+4. 旋转矩阵反对称误差和角速度误差生成三轴力矩；
+5. X 型分配矩阵把总推力/力矩转换为四电机 `omega²` 和 RPM；
+6. 对加速度、倾角、期望角速度、力矩、总推力和 RPM 做限幅。
+
+默认位置环和姿态环采用接近临界阻尼的增益。控制器参数全部从 `sim.yaml` 读取，动力学参数必须与 `quadrotor_dynamics_node` 保持一致。里程计超过 `0.2 s` 未更新时立即停止输出；规划器参考允许 `2.5 s` 超时，以覆盖最坏情况下约 `1.6 s` 的同步 3D A* 搜索，搜索期间保持上一条安全悬停参考。
 
 ## 3D voxel map 和模拟 LiDAR
 
@@ -176,7 +200,9 @@ SE(3) 控制器计算：
 
 全局规划采用膨胀后的 3D voxel map、26 邻域 A*、欧氏启发和移动线段碰撞检查。安全距离默认为 0.5 m，无人机半径默认为 0.18 m，因此搜索占用层总膨胀为 0.68 m。
 
-A* 路径先做可见性简化，再构造三次均匀 B-spline。曲线逐点碰撞检查；若平滑曲线不安全，则增加控制点密度；仍不安全时使用碰撞检查通过的 A* 折线局部目标回退，不会直接飞向原目标。滚动预测器限制速度、加速度和 jerk，并在发布前再次检查预测状态。
+A* 路径先做可见性简化，再构造三次均匀 B-spline。曲线逐点碰撞检查；若平滑曲线不安全，则增加控制点密度；仍不安全时使用碰撞检查通过的 A* 折线局部目标回退，不会直接飞向原目标。B-spline 使用弧长表按 `reference_speed × dt` 采样，保证位置、速度和加速度参考时间一致。滚动预测器限制速度、加速度和 jerk，默认只选取约 `0.2 s` 前视状态，并在发布前再次检查预测状态。
+
+进入目标点 `0.15 m` 且速度小于 `0.15 m/s` 后，规划器进入目标锁定状态，持续发布固定目标位置和零速度/零加速度，不再用变化的融合位置生成悬停参考。LiDAR 超时或规划失败时也只在进入悬停状态时锁定一次安全位置。
 
 LiDAR 点云经过三帧历史缓存和 voxel 去重，用于近场轨迹威胁确认。连续多帧发现威胁时触发重规划。失败状态发布到 `/drone/planner_status`：
 
@@ -216,6 +242,10 @@ ros2 run drone_visualization waypoint_mission.py --timeout 90
 - voxel 分辨率、地图范围和 6×N 障碍物数组；
 - 随机场景的障碍数量、固定种子、尺寸范围、端点净空和走廊偏置比例；
 - LiDAR FOV、线束数、量程、噪声和漏检率；
-- A* 搜索预算、安全距离、参考速度和巡航高度。
+- SE(3) 的 `kp/kv/kr/kw`、期望角速度滤波、力矩/倾角/加速度限幅和消息超时；
+- A* 搜索预算、安全距离、参考速度、巡航高度、目标锁定阈值；
+- 滚动预测的时域、步长、速度/加速度/jerk、增益和前视索引。
 
 修改物理参数时必须同步确认 hover RPM、控制增益和最大 RPM。修改地图范围或分辨率时，应同步修改 map、LiDAR 和 planner 的网格参数。
+
+当前调优基线为 `kp=[2.2,2.2,3.5]`、`kv=[3.0,3.0,3.8]`、`kr=[0.12,0.12,0.08]`、`kw=[0.065,0.065,0.065]`、参考速度 `0.8 m/s`。建议先在 `open.launch.py` 中调姿态阻尼和悬停，再进入障碍场景；不要先加入积分项掩盖参考不连续或姿态欠阻尼。

@@ -1,0 +1,54 @@
+UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini
+Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini
+   Site: ake-ThinkStation-K-C2490
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20260715-1147 - Experimental
+UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini
+Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini
+Test project /home/ake/sim_drone/ake_drone_sim/build/drone_planner
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_planner
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml" "--package-name" "drone_planner" "--output-file" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/ament_cmake_gtest/test_planner.txt" "--command" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_planner" "--gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner':
+1:  - /home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_planner --gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml
+1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 3 tests from 3 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 1 test from AStar3D
+1: [ RUN      ] AStar3D.FindsVerticalDetour
+1: [       OK ] AStar3D.FindsVerticalDetour (312 ms)
+1: [----------] 1 test from AStar3D (312 ms total)
+1: 
+1: [----------] 1 test from PlanningPipeline
+1: [ RUN      ] PlanningPipeline.FiveObstacleSplineIsSafe
+1: [       OK ] PlanningPipeline.FiveObstacleSplineIsSafe (5606 ms)
+1: [----------] 1 test from PlanningPipeline (5606 ms total)
+1: 
+1: [----------] 1 test from BSpline
+1: [ RUN      ] BSpline.ArcLengthRoundTrip
+1: [       OK ] BSpline.ArcLengthRoundTrip (2 ms)
+1: [----------] 1 test from BSpline (2 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 3 tests from 3 test suites ran. (5920 ms total)
+1: [  PASSED  ] 3 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml'
+1: -- run_test.py: verify result file '/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml'
+1/1 Test #1: test_planner .....................   Passed    5.96 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   5.96 sec*proc (1 test)
+
+Total Test time (real) =   5.96 sec

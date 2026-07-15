@@ -1,0 +1,43 @@
+[0.011s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_planner -- -j20 -l20
+[0.045s] [ 16%] Built target gtest
+[0.048s] [ 33%] Built target gtest_main
+[0.048s] [ 41%] Building CXX object CMakeFiles/drone_planner_core.dir/src/bspline.cpp.o
+[0.919s] [ 50%] Linking CXX shared library libdrone_planner_core.so
+[1.068s] [ 66%] Built target drone_planner_core
+[1.082s] Consolidate compiler generated dependencies of target ab_planner_node
+[1.087s] [ 75%] Linking CXX executable test_planner
+[1.097s] [ 83%] Linking CXX executable ab_planner_node
+[1.284s] [ 91%] Built target test_planner
+[1.618s] [100%] Built target ab_planner_node
+[1.626s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_planner -- -j20 -l20
+[1.633s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_planner
+[1.639s] -- Install configuration: ""
+[1.639s] -- Execute custom install script
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/drone_planner/ab_planner_node
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/astar3d.hpp
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/bspline.hpp
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/mpc_smoother.hpp
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.sh
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.dsv
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/package_run_dependencies/drone_planner
+[1.640s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/parent_prefix_path/drone_planner
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.sh
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.dsv
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.sh
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.dsv
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.bash
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.sh
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.zsh
+[1.641s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.dsv
+[1.641s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.dsv
+[1.652s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/packages/drone_planner
+[1.652s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_targets-extras.cmake
+[1.652s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.653s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig.cmake
+[1.653s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig-version.cmake
+[1.653s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.xml
+[1.653s] -- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/libdrone_planner_core.so
+[1.655s] -- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/libdrone_planner_core.so" to ""
+[1.655s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport.cmake
+[1.655s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport-noconfig.cmake
+[1.658s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_planner

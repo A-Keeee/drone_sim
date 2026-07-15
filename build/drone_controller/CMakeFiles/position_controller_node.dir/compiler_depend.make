@@ -497,6 +497,20 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
   /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
   /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -901,20 +915,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/float32_multi_array.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp \
@@ -933,20 +933,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/float32_multi_array.hpp:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
@@ -954,10 +940,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
 
@@ -1343,10 +1325,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
@@ -1425,6 +1403,28 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/c++/11/thread:
 
+/usr/include/c++/11/bits/stl_multiset.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/mutex:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/string.h:
@@ -1475,8 +1475,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/bits/unique_lock.h:
-
 /usr/include/c++/11/climits:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -1484,10 +1482,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/array:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -1645,11 +1639,11 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /usr/include/c++/11/bits/list.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -1763,6 +1757,8 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
@@ -1793,10 +1789,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/c++/11/bits/std_thread.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -1824,6 +1816,8 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /usr/include/c++/11/pstl/pstl_config.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1889,6 +1883,10 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
 /usr/include/c++/11/vector:
@@ -1941,12 +1939,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
 /usr/include/c++/11/streambuf:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
@@ -1975,10 +1967,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
-
 /usr/include/c++/11/bits/basic_string.h:
 
 /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
@@ -2004,6 +1992,8 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -2078,8 +2068,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
@@ -2210,8 +2198,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
-
-/usr/include/c++/11/mutex:
 
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
@@ -2373,15 +2359,15 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/eigen3/Eigen/src/Core/Block.h:
 
-/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/usr/include/c++/11/set:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Transform.h:
 
-/usr/include/c++/11/set:
+/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
 
@@ -2413,10 +2399,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/c++/11/bits/atomic_base.h:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
 /usr/include/c++/11/unordered_set:
 
 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
@@ -2426,14 +2408,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
 /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
@@ -2453,6 +2427,10 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
+
 /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
@@ -2464,6 +2442,10 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
 
@@ -2541,6 +2523,12 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
 
+/usr/include/c++/11/optional:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
 /usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
@@ -2575,9 +2563,9 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
-/usr/include/c++/11/cstring:
-
 /usr/include/c++/11/bits/atomic_futex.h:
+
+/usr/include/c++/11/cstring:
 
 /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
@@ -2634,6 +2622,12 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
 
 /usr/include/c++/11/bits/stl_map.h:
 
@@ -2709,6 +2703,32 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
@@ -2729,8 +2749,6 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -2746,21 +2764,3 @@ CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o: /hom
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/optional:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/c++/11/condition_variable:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/stl_set.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/bits/stl_multiset.h:

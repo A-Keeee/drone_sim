@@ -457,6 +457,30 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: \
  /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__traits.hpp \
  /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
  /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -848,30 +872,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \

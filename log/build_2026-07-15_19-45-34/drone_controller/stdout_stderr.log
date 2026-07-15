@@ -1,0 +1,6 @@
+[ 25%] Building CXX object CMakeFiles/drone_controller_core.dir/src/se3_controller.cpp.o
+[ 50%] Linking CXX shared library libdrone_controller_core.so
+[ 50%] Built target drone_controller_core
+[ 75%] Building CXX object CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o
+[100%] Linking CXX executable position_controller_node
+[100%] Built target position_controller_node

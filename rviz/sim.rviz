@@ -183,9 +183,9 @@ Visualization Manager:
           Head Diameter: 0.12
           Head Length: 0.08
           Length: 0.16
-          Line Style: Lines
-          Line Width: 0.055
-          Name: Smoothed B-spline
+          Line Style: Billboards
+          Line Width: 0.03
+          Name: B-spline / Safe A-star Fallback
           Offset:
             X: 0
             Y: 0
@@ -210,9 +210,9 @@ Visualization Manager:
           Head Diameter: 0.1
           Head Length: 0.07
           Length: 0.14
-          Line Style: Lines
-          Line Width: 0.035
-          Name: MPC Prediction
+          Line Style: Billboards
+          Line Width: 0.03
+          Name: Rolling MPC Prediction
           Offset:
             X: 0
             Y: 0
@@ -224,7 +224,7 @@ Visualization Manager:
           Shaft Length: 0.07
           Topic:
             Depth: 10
-            Durability Policy: Volatile
+            Durability Policy: Transient Local
             History Policy: Keep Last
             Reliability Policy: Reliable
             Value: /drone/mpc_prediction_path

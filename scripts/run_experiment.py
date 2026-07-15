@@ -13,9 +13,12 @@ class Runner(Node):
         self.goal_publish_count=0
         self.pub=self.create_publisher(PoseStamped,'/drone/goal',10); self.create_subscription(Odometry,'/drone/ground_truth/odom',self.odom,10); self.create_subscription(Float32MultiArray,'/drone/motor_rpm',lambda m:setattr(self,'rpm',list(m.data)),10); self.goal_timer=self.create_timer(0.25,self.send)
     def send(self):
+        # Wait for DDS discovery when the recorder is started immediately after launch.
+        if self.pub.get_subscription_count() == 0:
+            return
         m=PoseStamped();m.header.stamp=self.get_clock().now().to_msg();m.header.frame_id='map';m.pose.position.x,m.pose.position.y,m.pose.position.z=self.goal;m.pose.orientation.w=1.;self.pub.publish(m)
         self.goal_publish_count += 1
-        if self.goal_publish_count >= 3: self.goal_timer.cancel()
+        if self.goal_publish_count >= 5: self.goal_timer.cancel()
     def odom(self,m):
         p=m.pose.pose.position; self.rows.append([time.monotonic()-self.start,p.x,p.y,p.z,*self.rpm])
     def save(self):

@@ -1,0 +1,35 @@
+[0.009s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_controller -- -j20 -l20
+[0.065s] [ 50%] Built target drone_controller_core
+[0.077s] Consolidate compiler generated dependencies of target position_controller_node
+[0.098s] [ 75%] Building CXX object CMakeFiles/position_controller_node.dir/src/position_controller_node.cpp.o
+[6.491s] [100%] Linking CXX executable position_controller_node
+[6.874s] [100%] Built target position_controller_node
+[6.880s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_controller -- -j20 -l20
+[6.888s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_controller
+[6.893s] -- Install configuration: ""
+[6.893s] -- Execute custom install script
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/drone_controller/position_controller_node
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/include/ake_drone_sim/se3_controller.hpp
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/library_path.sh
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/library_path.dsv
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/ament_index/resource_index/package_run_dependencies/drone_controller
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/ament_index/resource_index/parent_prefix_path/drone_controller
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/ament_prefix_path.sh
+[6.894s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/ament_prefix_path.dsv
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/path.sh
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/environment/path.dsv
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/local_setup.bash
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/local_setup.sh
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/local_setup.zsh
+[6.895s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/local_setup.dsv
+[6.895s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.dsv
+[6.904s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/ament_index/resource_index/packages/drone_controller
+[6.904s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/ament_cmake_export_targets-extras.cmake
+[6.905s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.905s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig.cmake
+[6.905s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig-version.cmake
+[6.905s] -- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.xml
+[6.905s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/libdrone_controller_core.so
+[6.906s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/export_drone_controllerExport.cmake
+[6.906s] -- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/cmake/export_drone_controllerExport-noconfig.cmake
+[6.909s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_controller

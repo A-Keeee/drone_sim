@@ -1,0 +1,340 @@
+[0.061s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'drone_controller', 'drone_visualization']
+[0.061s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['drone_controller', 'drone_visualization'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7af11f64cfa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7af11f64c400>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7af11f64c400>>)
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) discover
+[0.177s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.177s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/ake/sim_drone/ake_drone_sim'
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore'
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore_ament_install'
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_pkg']
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_pkg'
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_meta']
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_meta'
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ros']
+[0.177s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ros'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['cmake', 'python']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'cmake'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['python_setup_py']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python_setup_py'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(build) by extension 'ignore'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(build) ignored
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'ignore'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'ignore_ament_install'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['colcon_pkg']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'colcon_pkg'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['colcon_meta']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'colcon_meta'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['ros']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'ros'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['cmake', 'python']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'cmake'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'python'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extensions ['python_setup_py']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(config) by extension 'python_setup_py'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(install) by extension 'ignore'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(install) ignored
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'ignore'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'ignore_ament_install'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['colcon_pkg']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'colcon_pkg'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['colcon_meta']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'colcon_meta'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['ros']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'ros'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['cmake', 'python']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'cmake'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'python'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extensions ['python_setup_py']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(launch) by extension 'python_setup_py'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(log) by extension 'ignore'
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(log) ignored
+[0.193s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'ignore'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'ignore_ament_install'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['colcon_pkg']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'colcon_pkg'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['colcon_meta']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'colcon_meta'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['ros']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'ros'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['cmake', 'python']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'cmake'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'python'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extensions ['python_setup_py']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report) by extension 'python_setup_py'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'ignore'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'ignore_ament_install'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['colcon_pkg']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'colcon_pkg'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['colcon_meta']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'colcon_meta'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['ros']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'ros'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['cmake', 'python']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'cmake'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'python'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extensions ['python_setup_py']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(report/results) by extension 'python_setup_py'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'ignore'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'ignore_ament_install'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['colcon_pkg']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'colcon_pkg'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['colcon_meta']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'colcon_meta'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['ros']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'ros'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['cmake', 'python']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'cmake'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'python'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extensions ['python_setup_py']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(rviz) by extension 'python_setup_py'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'ignore'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'ignore_ament_install'
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['colcon_pkg']
+[0.194s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'colcon_pkg'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['colcon_meta']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'colcon_meta'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['ros']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'ros'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['cmake', 'python']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'cmake'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'python'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extensions ['python_setup_py']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(scripts) by extension 'python_setup_py'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore_ament_install'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_pkg']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_pkg'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_meta']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_meta'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ros']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ros'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['cmake', 'python']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'cmake'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['python_setup_py']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python_setup_py'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extension 'ignore'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extension 'ignore_ament_install'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extensions ['colcon_pkg']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extension 'colcon_pkg'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extensions ['colcon_meta']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extension 'colcon_meta'
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extensions ['ros']
+[0.195s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_controller) by extension 'ros'
+[0.197s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_controller' with type 'ros.ament_cmake' and name 'drone_controller'
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extension 'ignore'
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extension 'ignore_ament_install'
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extensions ['colcon_pkg']
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extension 'colcon_pkg'
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extensions ['colcon_meta']
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extension 'colcon_meta'
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extensions ['ros']
+[0.197s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_dynamics) by extension 'ros'
+[0.198s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_dynamics' with type 'ros.ament_cmake' and name 'drone_dynamics'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extension 'ignore'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extension 'ignore_ament_install'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extensions ['colcon_pkg']
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extension 'colcon_pkg'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extensions ['colcon_meta']
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extension 'colcon_meta'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extensions ['ros']
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_map) by extension 'ros'
+[0.198s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_map' with type 'ros.ament_cmake' and name 'drone_map'
+[0.198s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extension 'ignore'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extension 'ignore_ament_install'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extensions ['colcon_pkg']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extension 'colcon_pkg'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extensions ['colcon_meta']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extension 'colcon_meta'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extensions ['ros']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_msgs) by extension 'ros'
+[0.199s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_msgs' with type 'ros.ament_cmake' and name 'drone_msgs'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extension 'ignore'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extension 'ignore_ament_install'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extensions ['colcon_pkg']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extension 'colcon_pkg'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extensions ['colcon_meta']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extension 'colcon_meta'
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extensions ['ros']
+[0.199s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_planner) by extension 'ros'
+[0.200s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_planner' with type 'ros.ament_cmake' and name 'drone_planner'
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extension 'ignore'
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extension 'ignore_ament_install'
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extensions ['colcon_pkg']
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extension 'colcon_pkg'
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extensions ['colcon_meta']
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extension 'colcon_meta'
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extensions ['ros']
+[0.200s] colcon.colcon_core.package_identification Level 1 _identify(src/drone_visualization) by extension 'ros'
+[0.200s] colcon.colcon_core.package_identification DEBUG Package 'src/drone_visualization' with type 'ros.ament_cmake' and name 'drone_visualization'
+[0.200s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
+[0.201s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) discover
+[0.201s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) using defaults
+[0.201s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) discover
+[0.201s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) using defaults
+[0.210s] colcon.colcon_core.package_selection INFO Skipping not selected package 'drone_dynamics' in 'src/drone_dynamics'
+[0.210s] colcon.colcon_core.package_selection INFO Skipping not selected package 'drone_msgs' in 'src/drone_msgs'
+[0.210s] colcon.colcon_core.package_selection INFO Skipping not selected package 'drone_map' in 'src/drone_map'
+[0.210s] colcon.colcon_core.package_selection INFO Skipping not selected package 'drone_planner' in 'src/drone_planner'
+[0.210s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) check parameters
+[0.210s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) discover
+[0.211s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 349 installed packages in /opt/ros/humble
+[0.212s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) using defaults
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_args' from command line to 'None'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_target' from command line to 'None'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.233s] colcon.colcon_core.verb Level 5 set package 'drone_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.233s] colcon.colcon_core.verb DEBUG Building package 'drone_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/sim_drone/ake_drone_sim/build/drone_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/sim_drone/ake_drone_sim/install/drone_controller', 'merge_install': False, 'path': '/home/ake/sim_drone/ake_drone_sim/src/drone_controller', 'symlink_install': True, 'test_result_base': None}
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_args' from command line to 'None'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_target' from command line to 'None'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_clean_first' from command line to 'False'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'cmake_force_configure' from command line to 'False'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'ament_cmake_args' from command line to 'None'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.234s] colcon.colcon_core.verb Level 5 set package 'drone_visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.234s] colcon.colcon_core.verb DEBUG Building package 'drone_visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/sim_drone/ake_drone_sim/build/drone_visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization', 'merge_install': False, 'path': '/home/ake/sim_drone/ake_drone_sim/src/drone_visualization', 'symlink_install': True, 'test_result_base': None}
+[0.234s] colcon.colcon_core.executor INFO Executing jobs using 'parallel' executor
+[0.234s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete
+[0.235s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/ake/sim_drone/ake_drone_sim/src/drone_controller' with build type 'ament_cmake'
+[0.235s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/ake/sim_drone/ake_drone_sim/src/drone_controller'
+[0.236s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.236s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.236s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.245s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_controller -- -j20 -l20
+[7.145s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_controller -- -j20 -l20
+[7.151s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_controller
+[7.167s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(drone_controller)
+[7.168s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_controller' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_controller
+[7.169s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller' for CMake module files
+[7.169s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller' for CMake config files
+[7.170s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_controller', 'cmake_prefix_path')
+[7.170s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.ps1'
+[7.171s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.dsv'
+[7.171s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.sh'
+[7.172s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib'
+[7.172s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_controller', 'ld_library_path_lib')
+[7.172s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.ps1'
+[7.173s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.dsv'
+[7.173s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.sh'
+[7.174s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/bin'
+[7.174s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/pkgconfig/drone_controller.pc'
+[7.174s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/python3.10/site-packages'
+[7.174s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/bin'
+[7.175s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.ps1'
+[7.176s] colcon.colcon_core.shell INFO Creating package descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.dsv'
+[7.176s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.sh'
+[7.177s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.bash'
+[7.178s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.zsh'
+[7.178s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/colcon-core/packages/drone_controller)
+[7.179s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(drone_controller)
+[7.179s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller' for CMake module files
+[7.179s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller' for CMake config files
+[7.180s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_controller', 'cmake_prefix_path')
+[7.180s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.ps1'
+[7.180s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.dsv'
+[7.180s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/cmake_prefix_path.sh'
+[7.181s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib'
+[7.181s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_controller', 'ld_library_path_lib')
+[7.181s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.ps1'
+[7.181s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.dsv'
+[7.181s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/hook/ld_library_path_lib.sh'
+[7.182s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/bin'
+[7.182s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/pkgconfig/drone_controller.pc'
+[7.182s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib/python3.10/site-packages'
+[7.182s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/bin'
+[7.182s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.ps1'
+[7.182s] colcon.colcon_core.shell INFO Creating package descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.dsv'
+[7.183s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.sh'
+[7.183s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.bash'
+[7.183s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/drone_controller/package.zsh'
+[7.183s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/ake/sim_drone/ake_drone_sim/install/drone_controller/share/colcon-core/packages/drone_controller)
+[7.183s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/ake/sim_drone/ake_drone_sim/src/drone_visualization' with build type 'ament_cmake'
+[7.184s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/ake/sim_drone/ake_drone_sim/src/drone_visualization'
+[7.184s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.184s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[7.204s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_visualization': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_visualization -- -j20 -l20
+[7.268s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_visualization' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_visualization -- -j20 -l20
+[7.269s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_visualization': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_visualization
+[7.289s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(drone_visualization)
+[7.289s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization' for CMake module files
+[7.289s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_visualization' returned '0': AMENT_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_visualization
+[7.289s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization' for CMake config files
+[7.289s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_visualization', 'cmake_prefix_path')
+[7.290s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.ps1'
+[7.290s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.dsv'
+[7.290s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.sh'
+[7.290s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib'
+[7.291s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/bin'
+[7.291s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib/pkgconfig/drone_visualization.pc'
+[7.291s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib/python3.10/site-packages'
+[7.291s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/bin'
+[7.291s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.ps1'
+[7.291s] colcon.colcon_core.shell INFO Creating package descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.dsv'
+[7.292s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.sh'
+[7.292s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.bash'
+[7.292s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.zsh'
+[7.292s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/colcon-core/packages/drone_visualization)
+[7.293s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(drone_visualization)
+[7.293s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization' for CMake module files
+[7.293s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization' for CMake config files
+[7.294s] colcon.colcon_core.shell Level 1 create_environment_hook('drone_visualization', 'cmake_prefix_path')
+[7.294s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.ps1'
+[7.294s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.dsv'
+[7.295s] colcon.colcon_core.shell INFO Creating environment hook '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/hook/cmake_prefix_path.sh'
+[7.295s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib'
+[7.295s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/bin'
+[7.295s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib/pkgconfig/drone_visualization.pc'
+[7.295s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/lib/python3.10/site-packages'
+[7.296s] colcon.colcon_core.environment Level 1 checking '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/bin'
+[7.296s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.ps1'
+[7.296s] colcon.colcon_core.shell INFO Creating package descriptor '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.dsv'
+[7.297s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.sh'
+[7.297s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.bash'
+[7.298s] colcon.colcon_core.shell INFO Creating package script '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/drone_visualization/package.zsh'
+[7.298s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/ake/sim_drone/ake_drone_sim/install/drone_visualization/share/colcon-core/packages/drone_visualization)
+[7.298s] colcon.colcon_parallel_executor.executor.parallel DEBUG closing loop
+[7.298s] colcon.colcon_parallel_executor.executor.parallel DEBUG loop closed
+[7.298s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete finished with '0'
+[7.298s] colcon.colcon_core.event_reactor DEBUG joining thread
+[7.302s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.302s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.302s] colcon.colcon_notification.desktop_notification INFO Sending desktop notification using 'notify2'
+[7.311s] colcon.colcon_core.event_reactor DEBUG joined thread
+[7.311s] colcon.colcon_core.shell INFO Creating prefix script '/home/ake/sim_drone/ake_drone_sim/install/local_setup.ps1'
+[7.313s] colcon.colcon_core.shell INFO Creating prefix util module '/home/ake/sim_drone/ake_drone_sim/install/_local_setup_util_ps1.py'
+[7.315s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/ake/sim_drone/ake_drone_sim/install/setup.ps1'
+[7.316s] colcon.colcon_core.shell INFO Creating prefix script '/home/ake/sim_drone/ake_drone_sim/install/local_setup.sh'
+[7.317s] colcon.colcon_core.shell INFO Creating prefix util module '/home/ake/sim_drone/ake_drone_sim/install/_local_setup_util_sh.py'
+[7.317s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/ake/sim_drone/ake_drone_sim/install/setup.sh'
+[7.318s] colcon.colcon_core.shell INFO Creating prefix script '/home/ake/sim_drone/ake_drone_sim/install/local_setup.bash'
+[7.319s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/ake/sim_drone/ake_drone_sim/install/setup.bash'
+[7.319s] colcon.colcon_core.shell INFO Creating prefix script '/home/ake/sim_drone/ake_drone_sim/install/local_setup.zsh'
+[7.320s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/ake/sim_drone/ake_drone_sim/install/setup.zsh'

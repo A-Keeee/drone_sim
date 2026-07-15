@@ -515,6 +515,30 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
   /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__traits.hpp \
   /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
   /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -919,30 +943,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
@@ -965,26 +965,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
@@ -992,10 +972,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
 
@@ -1199,12 +1175,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/shared_mutex:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
@@ -1369,18 +1339,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
@@ -1491,6 +1449,62 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/usr/include/unistd.h:
+
+/usr/include/c++/11/optional:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/string.h:
@@ -1548,10 +1562,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/array:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -1699,8 +1709,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
 /usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1709,11 +1717,11 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /usr/include/c++/11/bits/list.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -1725,21 +1733,13 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/locale:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
-
-/usr/include/c++/11/unordered_map:
-
 /usr/include/c++/11/cctype:
 
 /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
 
 /usr/include/c++/11/iomanip:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Array.h:
 
@@ -1791,6 +1791,10 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
@@ -1811,9 +1815,7 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -1848,8 +1850,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -1919,6 +1919,16 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
+
+/usr/include/c++/11/unordered_map:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
@@ -1930,6 +1940,8 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
 
@@ -1963,6 +1975,12 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
+
 /usr/include/features-time64.h:
 
 /usr/include/c++/11/system_error:
@@ -1989,13 +2007,13 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
 /usr/include/c++/11/streambuf:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/11/bits/functexcept.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
@@ -2004,8 +2022,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -2035,21 +2051,11 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/usr/include/unistd.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
@@ -2085,7 +2091,17 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/bits/exception_defines.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
 /usr/include/c++/11/ext/type_traits.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
@@ -2197,8 +2213,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
@@ -2210,8 +2224,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
@@ -2291,12 +2303,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /usr/include/eigen3/Eigen/Geometry:
@@ -2345,11 +2351,11 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
 
@@ -2473,10 +2479,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/c++/11/bits/atomic_base.h:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
 /usr/include/c++/11/unordered_set:
 
 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
@@ -2486,14 +2488,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
 /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
@@ -2515,6 +2509,8 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
+
 /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
@@ -2526,6 +2522,10 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
 
@@ -2571,8 +2571,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /usr/include/eigen3/Eigen/Cholesky:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
 /usr/include/eigen3/Eigen/Jacobi:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
@@ -2602,12 +2600,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
-
-/usr/include/c++/11/optional:
-
-/usr/include/c++/11/condition_variable:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
@@ -2677,9 +2669,15 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/mpc_smoother.hpp:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
+
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
 
 /home/ake/sim_drone/ake_drone_sim/src/drone_map/include/ake_drone_sim/pointcloud_utils.hpp:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
 
@@ -2727,6 +2725,12 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
 /usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
@@ -2734,8 +2738,6 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 /usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
@@ -2813,32 +2815,30 @@ CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o: /home/ake/sim_drone/ak
 
 /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/trajectory_setpoint.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/linux/close_range.h:

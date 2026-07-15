@@ -18,6 +18,34 @@ quadrotor_dynamics_node:
     imu_gyro_noise: 0.002
     gps_position_noise: 0.04
 
+position_controller_node:
+  ros__parameters:
+    # Vehicle parameters must match quadrotor_dynamics_node.
+    mass: 1.0
+    arm_length: 0.17
+    inertia: [0.008, 0.008, 0.014]
+    thrust_coefficient: 8.54858e-6
+    torque_coefficient: 1.6e-7
+    min_rpm: 0.0
+    max_rpm: 9000.0
+
+    # Near-critically-damped position and SO(3) loops.
+    kp: [2.2, 2.2, 3.5]
+    kv: [3.0, 3.0, 3.8]
+    kr: [0.12, 0.12, 0.08]
+    kw: [0.065, 0.065, 0.065]
+    max_torque: [0.35, 0.35, 0.20]
+    max_desired_rate: [1.5, 1.5, 1.0]
+    desired_rate_filter_tau: 0.10
+    max_horizontal_accel: 2.0
+    max_vertical_accel: 2.5
+    max_tilt: 0.40
+    max_total_thrust_ratio: 1.8
+    odom_timeout: 0.20
+    # A worst-case 3-D A* search currently takes about 1.6 s synchronously.
+    # Keep the last safe hover reference during that computation.
+    reference_timeout: 2.50
+
 voxel_map_node:
   ros__parameters:
     resolution: 0.2
@@ -48,9 +76,22 @@ ab_planner_node:
     resolution: 0.2
     safety_distance: 0.5
     vehicle_radius: 0.18
-    reference_speed: 1.2
+    reference_speed: 0.8
     cruise_altitude: 1.5
     lidar_timeout: 2.0
     max_search_nodes: 250000
     heuristic_weight: 1.05
     auto_takeoff: true
+    goal_tolerance: 0.15
+    goal_velocity_tolerance: 0.15
+    polyline_lookahead: 0.45
+    spline_lookahead: 0.15
+    mpc_horizon: 30
+    mpc_dt: 0.05
+    mpc_max_jerk: 3.0
+    mpc_max_accel: 2.0
+    mpc_max_velocity: 1.2
+    mpc_kp: 2.0
+    mpc_kv: 2.5
+    # Index 3 is about 0.20 s ahead, instead of the old 0.80 s lead.
+    mpc_command_index: 3

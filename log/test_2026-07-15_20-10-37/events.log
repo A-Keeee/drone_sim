@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000057] (drone_planner) JobQueued: {'identifier': 'drone_planner', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_msgs', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs'), ('drone_map', '/home/ake/sim_drone/ake_drone_sim/install/drone_map'), ('drone_planner', '/home/ake/sim_drone/ake_drone_sim/install/drone_planner')])}
+[0.000325] (drone_planner) JobStarted: {'identifier': 'drone_planner'}
+[0.020777] (drone_planner) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/5264f2156cbcd7aea5fd004d29eaa10209155d66/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"7d3970334613eea704823c76d6198ba3.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/5264f2156cbcd7aea5fd004d29eaa10209155d66","_corruptedFile":"/home/ake/.config/Code/clp/7d3970334613eea704823c76d6198ba3.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '2441'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2918'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13395'), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COLCON_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:10929'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0PNJZxX:/home/ake/.local/bin:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.71524-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2890,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2890'), ('INVOCATION_ID', '5c7a7a822d5c4f43be359e3437f3c29a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_planner'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/5264f2156cbcd7aea5fd004d29eaa10209155d66'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_controller'), ('VSCODE_PID', '13395')]), 'shell': False}
+[0.027431] (drone_planner) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini\n'}
+[0.027699] (drone_planner) StdoutLine: {'line': b'Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini\n'}
+[0.027880] (drone_planner) StdoutLine: {'line': b'   Site: ake-ThinkStation-K-C2490\n'}
+[0.028095] (drone_planner) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.028264] (drone_planner) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.028362] (drone_planner) StdoutLine: {'line': b'Create new tag: 20260715-1210 - Experimental\n'}
+[0.028416] (drone_planner) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini\n'}
+[0.028463] (drone_planner) StdoutLine: {'line': b'Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/CTestConfiguration.ini\n'}
+[0.028507] (drone_planner) StdoutLine: {'line': b'Test project /home/ake/sim_drone/ake_drone_sim/build/drone_planner\n'}
+[0.028548] (drone_planner) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.028587] (drone_planner) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.028627] (drone_planner) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.028674] (drone_planner) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.028712] (drone_planner) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.028750] (drone_planner) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.028787] (drone_planner) StdoutLine: {'line': b'test 1\n'}
+[0.028825] (drone_planner) StdoutLine: {'line': b'    Start 1: test_planner\n'}
+[0.028863] (drone_planner) StdoutLine: {'line': b'\n'}
+[0.028904] (drone_planner) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml" "--package-name" "drone_planner" "--output-file" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/ament_cmake_gtest/test_planner.txt" "--command" "/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_planner" "--gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml"\n'}
+[0.028951] (drone_planner) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.068997] (drone_planner) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/ake/sim_drone/ake_drone_sim/build/drone_planner':\n"}
+[0.069100] (drone_planner) StdoutLine: {'line': b'1:  - /home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_planner --gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml\n'}
+[0.070321] (drone_planner) StdoutLine: {'line': b'1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.070386] (drone_planner) StdoutLine: {'line': b'1: [==========] Running 3 tests from 3 test suites.\n'}
+[0.070415] (drone_planner) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.070443] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from AStar3D\n'}
+[0.070467] (drone_planner) StdoutLine: {'line': b'1: [ RUN      ] AStar3D.FindsVerticalDetour\n'}
+[0.099922] (-) TimerEvent: {}
+[0.200074] (-) TimerEvent: {}
+[0.300242] (-) TimerEvent: {}
+[0.381795] (drone_planner) StdoutLine: {'line': b'1: [       OK ] AStar3D.FindsVerticalDetour (311 ms)\n'}
+[0.381903] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from AStar3D (312 ms total)\n'}
+[0.381933] (drone_planner) StdoutLine: {'line': b'1: \n'}
+[0.381958] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from PlanningPipeline\n'}
+[0.381982] (drone_planner) StdoutLine: {'line': b'1: [ RUN      ] PlanningPipeline.FiveObstacleSplineIsSafe\n'}
+[0.400421] (-) TimerEvent: {}
+[0.500540] (-) TimerEvent: {}
+[0.600709] (-) TimerEvent: {}
+[0.700869] (-) TimerEvent: {}
+[0.801029] (-) TimerEvent: {}
+[0.901209] (-) TimerEvent: {}
+[1.001378] (-) TimerEvent: {}
+[1.101538] (-) TimerEvent: {}
+[1.201694] (-) TimerEvent: {}
+[1.301910] (-) TimerEvent: {}
+[1.402128] (-) TimerEvent: {}
+[1.502380] (-) TimerEvent: {}
+[1.602616] (-) TimerEvent: {}
+[1.702875] (-) TimerEvent: {}
+[1.803104] (-) TimerEvent: {}
+[1.903279] (-) TimerEvent: {}
+[2.003451] (-) TimerEvent: {}
+[2.103618] (-) TimerEvent: {}
+[2.203784] (-) TimerEvent: {}
+[2.304011] (-) TimerEvent: {}
+[2.404170] (-) TimerEvent: {}
+[2.504334] (-) TimerEvent: {}
+[2.604493] (-) TimerEvent: {}
+[2.704647] (-) TimerEvent: {}
+[2.804802] (-) TimerEvent: {}
+[2.904983] (-) TimerEvent: {}
+[3.005149] (-) TimerEvent: {}
+[3.105323] (-) TimerEvent: {}
+[3.205462] (-) TimerEvent: {}
+[3.305692] (-) TimerEvent: {}
+[3.405915] (-) TimerEvent: {}
+[3.506072] (-) TimerEvent: {}
+[3.606235] (-) TimerEvent: {}
+[3.706405] (-) TimerEvent: {}
+[3.806627] (-) TimerEvent: {}
+[3.906796] (-) TimerEvent: {}
+[4.006961] (-) TimerEvent: {}
+[4.107097] (-) TimerEvent: {}
+[4.207278] (-) TimerEvent: {}
+[4.307431] (-) TimerEvent: {}
+[4.407557] (-) TimerEvent: {}
+[4.507707] (-) TimerEvent: {}
+[4.607867] (-) TimerEvent: {}
+[4.708033] (-) TimerEvent: {}
+[4.808189] (-) TimerEvent: {}
+[4.908325] (-) TimerEvent: {}
+[5.008470] (-) TimerEvent: {}
+[5.108693] (-) TimerEvent: {}
+[5.208916] (-) TimerEvent: {}
+[5.309083] (-) TimerEvent: {}
+[5.409312] (-) TimerEvent: {}
+[5.509452] (-) TimerEvent: {}
+[5.609644] (-) TimerEvent: {}
+[5.709803] (-) TimerEvent: {}
+[5.809974] (-) TimerEvent: {}
+[5.910134] (-) TimerEvent: {}
+[5.972028] (drone_planner) StdoutLine: {'line': b'1: [       OK ] PlanningPipeline.FiveObstacleSplineIsSafe (5590 ms)\n'}
+[5.972132] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from PlanningPipeline (5590 ms total)\n'}
+[5.972163] (drone_planner) StdoutLine: {'line': b'1: \n'}
+[5.972190] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from BSpline\n'}
+[5.972215] (drone_planner) StdoutLine: {'line': b'1: [ RUN      ] BSpline.ArcLengthRoundTrip\n'}
+[5.973818] (drone_planner) StdoutLine: {'line': b'1: [       OK ] BSpline.ArcLengthRoundTrip (1 ms)\n'}
+[5.973863] (drone_planner) StdoutLine: {'line': b'1: [----------] 1 test from BSpline (1 ms total)\n'}
+[5.973889] (drone_planner) StdoutLine: {'line': b'1: \n'}
+[5.973912] (drone_planner) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[5.973935] (drone_planner) StdoutLine: {'line': b'1: [==========] 3 tests from 3 test suites ran. (5903 ms total)\n'}
+[5.973958] (drone_planner) StdoutLine: {'line': b'1: [  PASSED  ] 3 tests.\n'}
+[5.974069] (drone_planner) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[5.974160] (drone_planner) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml'\n"}
+[5.985518] (drone_planner) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/ake/sim_drone/ake_drone_sim/build/drone_planner/test_results/drone_planner/test_planner.gtest.xml'\n"}
+[5.991214] (drone_planner) StdoutLine: {'line': b'1/1 Test #1: test_planner .....................   Passed    5.96 sec\n'}
+[5.991508] (drone_planner) StdoutLine: {'line': b'\n'}
+[5.991558] (drone_planner) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[5.991588] (drone_planner) StdoutLine: {'line': b'\n'}
+[5.991614] (drone_planner) StdoutLine: {'line': b'Label Time Summary:\n'}
+[5.991639] (drone_planner) StdoutLine: {'line': b'gtest    =   5.96 sec*proc (1 test)\n'}
+[5.991665] (drone_planner) StdoutLine: {'line': b'\n'}
+[5.991689] (drone_planner) StdoutLine: {'line': b'Total Test time (real) =   5.96 sec\n'}
+[5.994272] (drone_planner) CommandEnded: {'returncode': 0}
+[5.994539] (drone_planner) JobEnded: {'identifier': 'drone_planner', 'rc': 0}
+[5.995046] (-) EventReactorShutdown: {}
