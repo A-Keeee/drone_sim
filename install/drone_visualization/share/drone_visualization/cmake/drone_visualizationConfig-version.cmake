@@ -1,0 +1,1 @@
+/home/ake/sim_drone/ake_drone_sim/build/drone_visualization/ament_cmake_core/drone_visualizationConfig-version.cmake

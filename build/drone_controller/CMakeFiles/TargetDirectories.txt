@@ -1,0 +1,11 @@
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/uninstall.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/drone_controller_uninstall.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/drone_controller_core.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/position_controller_node.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/test.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/edit_cache.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/rebuild_cache.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/list_install_components.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/install.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/install/local.dir
+/home/ake/sim_drone/ake_drone_sim/build/drone_controller/CMakeFiles/install/strip.dir

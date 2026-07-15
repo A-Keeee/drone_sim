@@ -1,0 +1,43 @@
+CMake Error at CMakeLists.txt:12 (add_library):
+  Target "drone_controller_core" links to target
+  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Error at CMakeLists.txt:12 (add_library):
+  Target "drone_controller_core" links to target
+  "drone_dynamics::imu_gps_fusion_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Error at CMakeLists.txt:16 (add_executable):
+  Target "position_controller_node" links to target
+  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Error at CMakeLists.txt:16 (add_executable):
+  Target "position_controller_node" links to target
+  "drone_dynamics::imu_gps_fusion_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Error at CMakeLists.txt:16 (add_executable):
+  Target "position_controller_node" links to target
+  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Error at CMakeLists.txt:16 (add_executable):
+  Target "position_controller_node" links to target
+  "drone_dynamics::imu_gps_fusion_node" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

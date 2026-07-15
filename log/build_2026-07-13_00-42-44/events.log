@@ -1,0 +1,149 @@
+[0.000000] (-) TimerEvent: {}
+[0.000044] (-) JobUnselected: {'identifier': 'drone_controller'}
+[0.000062] (-) JobUnselected: {'identifier': 'drone_dynamics'}
+[0.000071] (-) JobUnselected: {'identifier': 'drone_map'}
+[0.000079] (-) JobUnselected: {'identifier': 'drone_msgs'}
+[0.000085] (-) JobUnselected: {'identifier': 'drone_visualization'}
+[0.000094] (drone_planner) JobQueued: {'identifier': 'drone_planner', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_msgs', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs'), ('drone_map', '/home/ake/sim_drone/ake_drone_sim/install/drone_map')])}
+[0.000107] (drone_planner) JobStarted: {'identifier': 'drone_planner'}
+[0.008098] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'cmake'}
+[0.008421] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'build'}
+[0.008791] (drone_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/sim_drone/ake_drone_sim/build/drone_planner', '--', '-j20', '-l20'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_planner'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/opt/ros/humble'), ('VSCODE_PID', '751049')]), 'shell': False}
+[0.043273] (drone_planner) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gtest_main\n'}
+[0.043401] (drone_planner) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gtest\n'}
+[0.047073] (drone_planner) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target drone_planner_core\n'}
+[0.052057] (drone_planner) StdoutLine: {'line': b'[ 16%] Built target gtest_main\n'}
+[0.054563] (drone_planner) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[0.054675] (drone_planner) StdoutLine: {'line': b'[ 66%] Built target drone_planner_core\n'}
+[0.063648] (drone_planner) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_planner\n'}
+[0.065685] (drone_planner) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target ab_planner_node\n'}
+[0.074472] (drone_planner) StdoutLine: {'line': b'[ 83%] Built target test_planner\n'}
+[0.076585] (drone_planner) StdoutLine: {'line': b'[ 91%] Building CXX object CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o\n'}
+[0.097958] (-) TimerEvent: {}
+[0.198094] (-) TimerEvent: {}
+[0.298317] (-) TimerEvent: {}
+[0.398540] (-) TimerEvent: {}
+[0.498728] (-) TimerEvent: {}
+[0.598980] (-) TimerEvent: {}
+[0.699152] (-) TimerEvent: {}
+[0.799392] (-) TimerEvent: {}
+[0.899653] (-) TimerEvent: {}
+[0.999818] (-) TimerEvent: {}
+[1.100009] (-) TimerEvent: {}
+[1.200268] (-) TimerEvent: {}
+[1.300497] (-) TimerEvent: {}
+[1.400657] (-) TimerEvent: {}
+[1.500892] (-) TimerEvent: {}
+[1.601097] (-) TimerEvent: {}
+[1.701341] (-) TimerEvent: {}
+[1.801583] (-) TimerEvent: {}
+[1.901823] (-) TimerEvent: {}
+[2.002002] (-) TimerEvent: {}
+[2.102181] (-) TimerEvent: {}
+[2.202401] (-) TimerEvent: {}
+[2.302639] (-) TimerEvent: {}
+[2.402879] (-) TimerEvent: {}
+[2.503055] (-) TimerEvent: {}
+[2.603285] (-) TimerEvent: {}
+[2.703514] (-) TimerEvent: {}
+[2.803752] (-) TimerEvent: {}
+[2.903983] (-) TimerEvent: {}
+[3.004212] (-) TimerEvent: {}
+[3.104548] (-) TimerEvent: {}
+[3.204730] (-) TimerEvent: {}
+[3.304900] (-) TimerEvent: {}
+[3.405074] (-) TimerEvent: {}
+[3.505256] (-) TimerEvent: {}
+[3.605431] (-) TimerEvent: {}
+[3.705618] (-) TimerEvent: {}
+[3.805775] (-) TimerEvent: {}
+[3.906018] (-) TimerEvent: {}
+[4.006204] (-) TimerEvent: {}
+[4.106400] (-) TimerEvent: {}
+[4.206647] (-) TimerEvent: {}
+[4.306853] (-) TimerEvent: {}
+[4.407054] (-) TimerEvent: {}
+[4.507241] (-) TimerEvent: {}
+[4.607463] (-) TimerEvent: {}
+[4.707663] (-) TimerEvent: {}
+[4.807890] (-) TimerEvent: {}
+[4.908079] (-) TimerEvent: {}
+[5.008267] (-) TimerEvent: {}
+[5.108438] (-) TimerEvent: {}
+[5.208580] (-) TimerEvent: {}
+[5.308726] (-) TimerEvent: {}
+[5.408952] (-) TimerEvent: {}
+[5.509134] (-) TimerEvent: {}
+[5.609301] (-) TimerEvent: {}
+[5.709443] (-) TimerEvent: {}
+[5.809579] (-) TimerEvent: {}
+[5.909740] (-) TimerEvent: {}
+[6.009912] (-) TimerEvent: {}
+[6.110076] (-) TimerEvent: {}
+[6.210300] (-) TimerEvent: {}
+[6.310529] (-) TimerEvent: {}
+[6.410673] (-) TimerEvent: {}
+[6.510843] (-) TimerEvent: {}
+[6.611010] (-) TimerEvent: {}
+[6.711180] (-) TimerEvent: {}
+[6.811405] (-) TimerEvent: {}
+[6.911548] (-) TimerEvent: {}
+[7.011693] (-) TimerEvent: {}
+[7.111862] (-) TimerEvent: {}
+[7.212030] (-) TimerEvent: {}
+[7.312193] (-) TimerEvent: {}
+[7.412352] (-) TimerEvent: {}
+[7.512548] (-) TimerEvent: {}
+[7.612691] (-) TimerEvent: {}
+[7.712853] (-) TimerEvent: {}
+[7.813037] (-) TimerEvent: {}
+[7.913196] (-) TimerEvent: {}
+[8.013373] (-) TimerEvent: {}
+[8.113601] (-) TimerEvent: {}
+[8.213841] (-) TimerEvent: {}
+[8.314094] (-) TimerEvent: {}
+[8.414344] (-) TimerEvent: {}
+[8.514615] (-) TimerEvent: {}
+[8.614908] (-) TimerEvent: {}
+[8.681025] (drone_planner) StdoutLine: {'line': b'[100%] Linking CXX executable ab_planner_node\n'}
+[8.715101] (-) TimerEvent: {}
+[8.815287] (-) TimerEvent: {}
+[8.915493] (-) TimerEvent: {}
+[9.015706] (-) TimerEvent: {}
+[9.115900] (-) TimerEvent: {}
+[9.189256] (drone_planner) StdoutLine: {'line': b'[100%] Built target ab_planner_node\n'}
+[9.197497] (drone_planner) CommandEnded: {'returncode': 0}
+[9.198133] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'install'}
+[9.205489] (drone_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/sim_drone/ake_drone_sim/build/drone_planner'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_planner'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_map:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/opt/ros/humble'), ('VSCODE_PID', '751049')]), 'shell': False}
+[9.214270] (drone_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.214975] (drone_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.215207] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/drone_planner/ab_planner_node\n'}
+[9.215567] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/astar3d.hpp\n'}
+[9.215687] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/bspline.hpp\n'}
+[9.215813] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/mpc_smoother.hpp\n'}
+[9.215933] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.sh\n'}
+[9.215994] (-) TimerEvent: {}
+[9.216072] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.dsv\n'}
+[9.216269] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/package_run_dependencies/drone_planner\n'}
+[9.216424] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/parent_prefix_path/drone_planner\n'}
+[9.216567] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.sh\n'}
+[9.216695] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.dsv\n'}
+[9.216804] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.sh\n'}
+[9.216916] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.dsv\n'}
+[9.217024] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.bash\n'}
+[9.217133] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.sh\n'}
+[9.217236] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.zsh\n'}
+[9.217343] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.dsv\n'}
+[9.217441] (drone_planner) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.dsv\n'}
+[9.230871] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/packages/drone_planner\n'}
+[9.231389] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.231876] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.231991] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig.cmake\n'}
+[9.232147] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig-version.cmake\n'}
+[9.232229] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.xml\n'}
+[9.232308] (drone_planner) StdoutLine: {'line': b'-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/libdrone_planner_core.so\n'}
+[9.232468] (drone_planner) StdoutLine: {'line': b'-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport.cmake\n'}
+[9.232549] (drone_planner) StdoutLine: {'line': b'-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport-noconfig.cmake\n'}
+[9.234763] (drone_planner) CommandEnded: {'returncode': 0}
+[9.247530] (drone_planner) JobEnded: {'identifier': 'drone_planner', 'rc': 0}
+[9.247800] (-) EventReactorShutdown: {}

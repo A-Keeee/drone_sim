@@ -1,0 +1,39 @@
+Start testing: Jul 13 00:49 CST
+----------------------------------------------------------
+1/1 Testing: test_dynamics
+1/1 Test: test_dynamics
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml" "--package-name" "drone_dynamics" "--output-file" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/ament_cmake_gtest/test_dynamics.txt" "--command" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_dynamics" "--gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml"
+Directory: /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics
+"test_dynamics" start time: Jul 13 00:49 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics':
+ - /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_dynamics --gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from Dynamics
+[ RUN      ] Dynamics.EqualMotorsProduceNoTorque
+[       OK ] Dynamics.EqualMotorsProduceNoTorque (8 ms)
+[ RUN      ] Dynamics.QuaternionRemainsNormalized
+[       OK ] Dynamics.QuaternionRemainsNormalized (14 ms)
+[----------] 2 tests from Dynamics (22 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (22 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml'
+-- run_test.py: verify result file '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml'
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_dynamics" end time: Jul 13 00:49 CST
+"test_dynamics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 13 00:49 CST
+
+gtest =   0.06 sec*proc
+

@@ -1,0 +1,620 @@
+[0.000000] (-) TimerEvent: {}
+[0.000060] (drone_dynamics) JobQueued: {'identifier': 'drone_dynamics', 'dependencies': OrderedDict()}
+[0.000175] (drone_msgs) JobQueued: {'identifier': 'drone_msgs', 'dependencies': OrderedDict()}
+[0.000407] (drone_controller) JobQueued: {'identifier': 'drone_controller', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_msgs', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs')])}
+[0.000473] (drone_map) JobQueued: {'identifier': 'drone_map', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics')])}
+[0.000502] (drone_planner) JobQueued: {'identifier': 'drone_planner', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_msgs', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs'), ('drone_map', '/home/ake/sim_drone/ake_drone_sim/install/drone_map')])}
+[0.000633] (drone_visualization) JobQueued: {'identifier': 'drone_visualization', 'dependencies': OrderedDict([('drone_dynamics', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'), ('drone_msgs', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs'), ('drone_controller', '/home/ake/sim_drone/ake_drone_sim/install/drone_controller'), ('drone_map', '/home/ake/sim_drone/ake_drone_sim/install/drone_map'), ('drone_planner', '/home/ake/sim_drone/ake_drone_sim/install/drone_planner')])}
+[0.000670] (drone_dynamics) JobStarted: {'identifier': 'drone_dynamics'}
+[0.003149] (drone_msgs) JobStarted: {'identifier': 'drone_msgs'}
+[0.005456] (drone_dynamics) JobProgress: {'identifier': 'drone_dynamics', 'progress': 'cmake'}
+[0.005831] (drone_dynamics) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/sim_drone/ake_drone_sim/src/drone_dynamics', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.007281] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'cmake'}
+[0.007394] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'build'}
+[0.007748] (drone_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs', '--', '-j20', '-l20'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.017074] (drone_dynamics) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.034755] (drone_msgs) StdoutLine: {'line': b'[  3%] Generating C code for ROS interfaces\n'}
+[0.043479] (drone_msgs) StdoutLine: {'line': b'[  6%] Generating C++ code for ROS interfaces\n'}
+[0.043847] (drone_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_drone_msgs\n'}
+[0.099892] (-) TimerEvent: {}
+[0.110706] (drone_dynamics) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.114232] (drone_dynamics) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.130146] (drone_dynamics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.131342] (drone_dynamics) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.134560] (drone_dynamics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.139608] (drone_dynamics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.146100] (drone_dynamics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.163477] (drone_dynamics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.164235] (drone_dynamics) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.175351] (drone_msgs) StdoutLine: {'line': b'[  9%] Building C object CMakeFiles/drone_msgs__rosidl_generator_c.dir/rosidl_generator_c/drone_msgs/msg/detail/trajectory_setpoint__functions.c.o\n'}
+[0.183232] (drone_msgs) StdoutLine: {'line': b'[  9%] Built target drone_msgs__cpp\n'}
+[0.189100] (drone_msgs) StdoutLine: {'line': b'[ 12%] Generating C++ type support dispatch for ROS interfaces\n'}
+[0.189316] (drone_msgs) StdoutLine: {'line': b'[ 16%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[0.191751] (drone_msgs) StdoutLine: {'line': b'[ 19%] Generating C++ introspection for ROS interfaces\n'}
+[0.199990] (-) TimerEvent: {}
+[0.204277] (drone_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.204533] (drone_msgs) StdoutLine: {'line': b'creating drone_msgs.egg-info\n'}
+[0.204614] (drone_msgs) StdoutLine: {'line': b'writing drone_msgs.egg-info/PKG-INFO\n'}
+[0.204705] (drone_msgs) StdoutLine: {'line': b'writing dependency_links to drone_msgs.egg-info/dependency_links.txt\n'}
+[0.204803] (drone_msgs) StdoutLine: {'line': b'writing top-level names to drone_msgs.egg-info/top_level.txt\n'}
+[0.204971] (drone_msgs) StdoutLine: {'line': b"writing manifest file 'drone_msgs.egg-info/SOURCES.txt'\n"}
+[0.206407] (drone_msgs) StdoutLine: {'line': b"reading manifest file 'drone_msgs.egg-info/SOURCES.txt'\n"}
+[0.206596] (drone_msgs) StdoutLine: {'line': b"writing manifest file 'drone_msgs.egg-info/SOURCES.txt'\n"}
+[0.211373] (drone_msgs) StdoutLine: {'line': b'[ 22%] Linking C shared library libdrone_msgs__rosidl_generator_c.so\n'}
+[0.232141] (drone_msgs) StdoutLine: {'line': b'[ 22%] Built target ament_cmake_python_build_drone_msgs_egg\n'}
+[0.233661] (drone_dynamics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.244311] (drone_msgs) StdoutLine: {'line': b'[ 22%] Built target drone_msgs__rosidl_generator_c\n'}
+[0.251347] (drone_msgs) StdoutLine: {'line': b'[ 29%] Generating C type support for eProsima Fast-RTPS\n'}
+[0.251550] (drone_msgs) StdoutLine: {'line': b'[ 29%] Generating C introspection for ROS interfaces\n'}
+[0.254391] (drone_msgs) StdoutLine: {'line': b'[ 32%] Generating C type support dispatch for ROS interfaces\n'}
+[0.263790] (drone_dynamics) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.270389] (drone_dynamics) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.279367] (drone_dynamics) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.288484] (drone_dynamics) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.290548] (drone_dynamics) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.300110] (-) TimerEvent: {}
+[0.320586] (drone_msgs) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/drone_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drone_msgs/msg/trajectory_setpoint__type_support.cpp.o\n'}
+[0.328743] (drone_msgs) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/drone_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drone_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.o\n'}
+[0.333810] (drone_msgs) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/drone_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drone_msgs/msg/detail/trajectory_setpoint__type_support.cpp.o\n'}
+[0.334198] (drone_dynamics) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.339541] (drone_dynamics) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[0.339914] (drone_dynamics) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.388559] (drone_msgs) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/drone_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/drone_msgs/msg/trajectory_setpoint__type_support.cpp.o\n'}
+[0.389565] (drone_msgs) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/drone_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drone_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.o\n'}
+[0.394766] (drone_msgs) StdoutLine: {'line': b'[ 51%] Building C object CMakeFiles/drone_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drone_msgs/msg/detail/trajectory_setpoint__type_support.c.o\n'}
+[0.400259] (-) TimerEvent: {}
+[0.406849] (drone_dynamics) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.412808] (drone_msgs) StdoutLine: {'line': b'[ 54%] Linking CXX shared library libdrone_msgs__rosidl_typesupport_c.so\n'}
+[0.418931] (drone_msgs) StdoutLine: {'line': b'[ 58%] Linking C shared library libdrone_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.424448] (drone_dynamics) StdoutLine: {'line': b'-- Generating done\n'}
+[0.431138] (drone_dynamics) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics\n'}
+[0.440196] (drone_msgs) StdoutLine: {'line': b'[ 58%] Built target drone_msgs__rosidl_typesupport_introspection_c\n'}
+[0.441282] (drone_dynamics) CommandEnded: {'returncode': 0}
+[0.441931] (drone_dynamics) JobProgress: {'identifier': 'drone_dynamics', 'progress': 'build'}
+[0.442278] (drone_dynamics) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics', '--', '-j20', '-l20'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.453246] (drone_msgs) StdoutLine: {'line': b'[ 58%] Built target drone_msgs__rosidl_typesupport_c\n'}
+[0.473170] (drone_msgs) StdoutLine: {'line': b'[ 61%] Linking CXX shared library libdrone_msgs__rosidl_typesupport_cpp.so\n'}
+[0.478352] (drone_dynamics) StdoutLine: {'line': b'[ 23%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\n'}
+[0.478535] (drone_dynamics) StdoutLine: {'line': b'[ 23%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\n'}
+[0.478575] (drone_dynamics) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/drone_dynamics_core.dir/src/eskf.cpp.o\n'}
+[0.480552] (drone_dynamics) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/drone_dynamics_core.dir/src/dynamics_model.cpp.o\n'}
+[0.500379] (-) TimerEvent: {}
+[0.503582] (drone_msgs) StdoutLine: {'line': b'[ 61%] Built target drone_msgs__rosidl_typesupport_cpp\n'}
+[0.555746] (drone_msgs) StdoutLine: {'line': b'[ 64%] Linking CXX shared library libdrone_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.558425] (drone_msgs) StdoutLine: {'line': b'[ 67%] Linking CXX shared library libdrone_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.581842] (drone_msgs) StdoutLine: {'line': b'[ 70%] Linking CXX shared library libdrone_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.600497] (-) TimerEvent: {}
+[0.617682] (drone_msgs) StdoutLine: {'line': b'[ 70%] Built target drone_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.629718] (drone_msgs) StdoutLine: {'line': b'[ 70%] Built target drone_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.645554] (drone_msgs) StdoutLine: {'line': b'[ 70%] Built target drone_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.663896] (drone_msgs) StdoutLine: {'line': b'[ 70%] Built target drone_msgs\n'}
+[0.678469] (drone_msgs) StdoutLine: {'line': b'[ 74%] Generating Python code for ROS interfaces\n'}
+[0.700621] (-) TimerEvent: {}
+[0.800809] (-) TimerEvent: {}
+[0.844562] (drone_msgs) StdoutLine: {'line': b'[ 74%] Built target drone_msgs__py\n'}
+[0.861183] (drone_msgs) StdoutLine: {'line': b'[ 77%] Building C object CMakeFiles/drone_msgs__rosidl_generator_py.dir/rosidl_generator_py/drone_msgs/msg/_trajectory_setpoint_s.c.o\n'}
+[0.900923] (-) TimerEvent: {}
+[0.920963] (drone_msgs) StdoutLine: {'line': b'[ 80%] Linking C shared library rosidl_generator_py/drone_msgs/libdrone_msgs__rosidl_generator_py.so\n'}
+[0.952147] (drone_msgs) StdoutLine: {'line': b'[ 80%] Built target drone_msgs__rosidl_generator_py\n'}
+[0.966324] (drone_msgs) StdoutLine: {'line': b'[ 83%] Building C object CMakeFiles/drone_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[0.969151] (drone_msgs) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/drone_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[0.969398] (drone_msgs) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/drone_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_c.c.o\n'}
+[0.989865] (drone_dynamics) StdoutLine: {'line': b'[ 38%] Linking CXX static library libgtest_main.a\n'}
+[1.001039] (-) TimerEvent: {}
+[1.015183] (drone_dynamics) StdoutLine: {'line': b'[ 38%] Built target gtest_main\n'}
+[1.024769] (drone_msgs) StdoutLine: {'line': b'[ 93%] Linking C shared library rosidl_generator_py/drone_msgs/drone_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.025999] (drone_msgs) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/drone_msgs/drone_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.030527] (drone_msgs) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/drone_msgs/drone_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.052130] (drone_msgs) StdoutLine: {'line': b'[100%] Built target drone_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.056063] (drone_msgs) StdoutLine: {'line': b'[100%] Built target drone_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.064416] (drone_msgs) StdoutLine: {'line': b'[100%] Built target drone_msgs__rosidl_typesupport_c__pyext\n'}
+[1.072756] (drone_msgs) CommandEnded: {'returncode': 0}
+[1.073186] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'install'}
+[1.078890] (drone_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_msgs'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.085339] (drone_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.085652] (drone_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.085820] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/ament_index/resource_index/rosidl_interfaces/drone_msgs\n'}
+[1.091261] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__functions.h\n'}
+[1.097547] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__struct.h\n'}
+[1.101126] (-) TimerEvent: {}
+[1.104706] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.h\n'}
+[1.112260] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.117241] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/trajectory_setpoint.h\n'}
+[1.124661] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/library_path.sh\n'}
+[1.131279] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/library_path.dsv\n'}
+[1.136848] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_fastrtps_c.h\n'}
+[1.144409] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.151010] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_introspection_c.h\n'}
+[1.156570] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.164203] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__builder.hpp\n'}
+[1.170810] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__struct.hpp\n'}
+[1.176332] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__traits.hpp\n'}
+[1.181921] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__type_support.hpp\n'}
+[1.189425] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.194960] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/trajectory_setpoint.hpp\n'}
+[1.201129] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.201254] (-) TimerEvent: {}
+[1.208567] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.214902] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.220241] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/pythonpath.sh\n'}
+[1.225614] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/pythonpath.dsv\n'}
+[1.231911] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[1.240169] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.248690] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.254606] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[1.261963] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/__init__.py\n'}
+[1.269747] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.274970] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.281452] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.288861] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.294706] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.301174] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.301305] (-) TimerEvent: {}
+[1.308680] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/libdrone_msgs__rosidl_generator_py.so\n'}
+[1.314882] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/__init__.py\n'}
+[1.322376] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_trajectory_setpoint.py\n'}
+[1.329841] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_trajectory_setpoint_s.c\n'}
+[1.334897] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.335042] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.335118] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.335195] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/msg/TrajectorySetpoint.idl\n'}
+[1.340572] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/msg/TrajectorySetpoint.msg\n'}
+[1.348115] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/ament_index/resource_index/package_run_dependencies/drone_msgs\n'}
+[1.354191] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/ament_index/resource_index/parent_prefix_path/drone_msgs\n'}
+[1.359697] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/ament_prefix_path.sh\n'}
+[1.367248] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/ament_prefix_path.dsv\n'}
+[1.374755] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/path.sh\n'}
+[1.381795] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/environment/path.dsv\n'}
+[1.389634] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/local_setup.bash\n'}
+[1.395266] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/local_setup.sh\n'}
+[1.401412] (-) TimerEvent: {}
+[1.401590] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/local_setup.zsh\n'}
+[1.409222] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/local_setup.dsv\n'}
+[1.416749] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/package.dsv\n'}
+[1.424378] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/ament_index/resource_index/packages/drone_msgs\n'}
+[1.432268] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.440186] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.448111] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.454090] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.460850] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.468730] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.474667] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.480646] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgsConfig.cmake\n'}
+[1.488037] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgsConfig-version.cmake\n'}
+[1.494270] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/package.xml\n'}
+[1.499930] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_c.so\n'}
+[1.500155] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_c.so" to ""\n'}
+[1.500247] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.500527] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[1.500659] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.501156] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[1.501305] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_c.so\n'}
+[1.501480] (-) TimerEvent: {}
+[1.501505] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_c.so" to ""\n'}
+[1.501588] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.501800] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[1.501891] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.502165] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[1.502254] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_cpp.so\n'}
+[1.502444] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[1.527000] (drone_msgs) StdoutLine: {'line': b"Listing '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs'...\n"}
+[1.527197] (drone_msgs) StdoutLine: {'line': b"Compiling '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/__init__.py'...\n"}
+[1.527301] (drone_msgs) StdoutLine: {'line': b"Listing '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg'...\n"}
+[1.527352] (drone_msgs) StdoutLine: {'line': b"Compiling '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/__init__.py'...\n"}
+[1.527399] (drone_msgs) StdoutLine: {'line': b"Compiling '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_trajectory_setpoint.py'...\n"}
+[1.530490] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_py.so\n'}
+[1.530630] (drone_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_py.so" to ""\n'}
+[1.530702] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cExport.cmake\n'}
+[1.530735] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.530795] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.530858] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.530893] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.530988] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.531041] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.531082] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.531140] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.531174] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.531348] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.531385] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.531446] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.531472] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.531561] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.531607] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.531646] (drone_msgs) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.533336] (drone_msgs) CommandEnded: {'returncode': 0}
+[1.544196] (drone_msgs) JobEnded: {'identifier': 'drone_msgs', 'rc': 0}
+[1.601593] (-) TimerEvent: {}
+[1.701712] (-) TimerEvent: {}
+[1.801889] (-) TimerEvent: {}
+[1.902063] (-) TimerEvent: {}
+[2.002255] (-) TimerEvent: {}
+[2.102431] (-) TimerEvent: {}
+[2.202618] (-) TimerEvent: {}
+[2.302790] (-) TimerEvent: {}
+[2.315238] (drone_dynamics) StdoutLine: {'line': b'[ 46%] Linking CXX static library libgtest.a\n'}
+[2.356711] (drone_dynamics) StdoutLine: {'line': b'[ 46%] Built target gtest\n'}
+[2.402871] (-) TimerEvent: {}
+[2.503031] (-) TimerEvent: {}
+[2.603225] (-) TimerEvent: {}
+[2.703418] (-) TimerEvent: {}
+[2.803606] (-) TimerEvent: {}
+[2.903791] (-) TimerEvent: {}
+[3.003929] (-) TimerEvent: {}
+[3.104132] (-) TimerEvent: {}
+[3.204389] (-) TimerEvent: {}
+[3.304595] (-) TimerEvent: {}
+[3.404848] (-) TimerEvent: {}
+[3.505026] (-) TimerEvent: {}
+[3.605228] (-) TimerEvent: {}
+[3.705503] (-) TimerEvent: {}
+[3.805711] (-) TimerEvent: {}
+[3.905973] (-) TimerEvent: {}
+[4.006180] (-) TimerEvent: {}
+[4.106403] (-) TimerEvent: {}
+[4.206695] (-) TimerEvent: {}
+[4.306888] (-) TimerEvent: {}
+[4.407216] (-) TimerEvent: {}
+[4.507474] (-) TimerEvent: {}
+[4.607753] (-) TimerEvent: {}
+[4.707933] (-) TimerEvent: {}
+[4.808140] (-) TimerEvent: {}
+[4.908308] (-) TimerEvent: {}
+[5.008490] (-) TimerEvent: {}
+[5.108737] (-) TimerEvent: {}
+[5.208901] (-) TimerEvent: {}
+[5.309088] (-) TimerEvent: {}
+[5.409259] (-) TimerEvent: {}
+[5.509435] (-) TimerEvent: {}
+[5.609630] (-) TimerEvent: {}
+[5.709802] (-) TimerEvent: {}
+[5.810060] (-) TimerEvent: {}
+[5.910254] (-) TimerEvent: {}
+[6.010443] (-) TimerEvent: {}
+[6.110611] (-) TimerEvent: {}
+[6.210753] (-) TimerEvent: {}
+[6.310896] (-) TimerEvent: {}
+[6.411069] (-) TimerEvent: {}
+[6.511249] (-) TimerEvent: {}
+[6.611448] (-) TimerEvent: {}
+[6.711643] (-) TimerEvent: {}
+[6.811809] (-) TimerEvent: {}
+[6.911946] (-) TimerEvent: {}
+[7.012112] (-) TimerEvent: {}
+[7.029459] (drone_dynamics) StdoutLine: {'line': b'[ 53%] Linking CXX shared library libdrone_dynamics_core.so\n'}
+[7.112210] (-) TimerEvent: {}
+[7.212369] (-) TimerEvent: {}
+[7.312535] (-) TimerEvent: {}
+[7.396510] (drone_dynamics) StdoutLine: {'line': b'[ 53%] Built target drone_dynamics_core\n'}
+[7.407366] (drone_dynamics) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/imu_gps_fusion_node.dir/src/imu_gps_fusion_node.cpp.o\n'}
+[7.411936] (drone_dynamics) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/test_dynamics.dir/test/test_dynamics.cpp.o\n'}
+[7.412428] (drone_dynamics) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/quadrotor_dynamics_node.dir/src/quadrotor_dynamics_node.cpp.o\n'}
+[7.412589] (-) TimerEvent: {}
+[7.512709] (-) TimerEvent: {}
+[7.612860] (-) TimerEvent: {}
+[7.713032] (-) TimerEvent: {}
+[7.813207] (-) TimerEvent: {}
+[7.913379] (-) TimerEvent: {}
+[8.013562] (-) TimerEvent: {}
+[8.113715] (-) TimerEvent: {}
+[8.213877] (-) TimerEvent: {}
+[8.314077] (-) TimerEvent: {}
+[8.414270] (-) TimerEvent: {}
+[8.514475] (-) TimerEvent: {}
+[8.529097] (drone_dynamics) StdoutLine: {'line': b'[ 84%] Linking CXX executable test_dynamics\n'}
+[8.614587] (-) TimerEvent: {}
+[8.714749] (-) TimerEvent: {}
+[8.737884] (drone_dynamics) StdoutLine: {'line': b'[ 84%] Built target test_dynamics\n'}
+[8.814839] (-) TimerEvent: {}
+[8.914994] (-) TimerEvent: {}
+[9.015170] (-) TimerEvent: {}
+[9.115377] (-) TimerEvent: {}
+[9.215567] (-) TimerEvent: {}
+[9.315719] (-) TimerEvent: {}
+[9.415882] (-) TimerEvent: {}
+[9.516071] (-) TimerEvent: {}
+[9.616257] (-) TimerEvent: {}
+[9.716438] (-) TimerEvent: {}
+[9.816624] (-) TimerEvent: {}
+[9.916785] (-) TimerEvent: {}
+[10.016944] (-) TimerEvent: {}
+[10.117115] (-) TimerEvent: {}
+[10.217288] (-) TimerEvent: {}
+[10.317491] (-) TimerEvent: {}
+[10.417649] (-) TimerEvent: {}
+[10.517749] (-) TimerEvent: {}
+[10.617885] (-) TimerEvent: {}
+[10.718077] (-) TimerEvent: {}
+[10.818271] (-) TimerEvent: {}
+[10.918463] (-) TimerEvent: {}
+[11.018659] (-) TimerEvent: {}
+[11.118821] (-) TimerEvent: {}
+[11.219002] (-) TimerEvent: {}
+[11.319187] (-) TimerEvent: {}
+[11.419376] (-) TimerEvent: {}
+[11.519571] (-) TimerEvent: {}
+[11.619723] (-) TimerEvent: {}
+[11.719869] (-) TimerEvent: {}
+[11.820048] (-) TimerEvent: {}
+[11.920228] (-) TimerEvent: {}
+[12.020397] (-) TimerEvent: {}
+[12.120569] (-) TimerEvent: {}
+[12.220745] (-) TimerEvent: {}
+[12.320922] (-) TimerEvent: {}
+[12.421099] (-) TimerEvent: {}
+[12.521290] (-) TimerEvent: {}
+[12.621474] (-) TimerEvent: {}
+[12.721667] (-) TimerEvent: {}
+[12.821856] (-) TimerEvent: {}
+[12.922050] (-) TimerEvent: {}
+[13.022270] (-) TimerEvent: {}
+[13.122423] (-) TimerEvent: {}
+[13.222589] (-) TimerEvent: {}
+[13.322757] (-) TimerEvent: {}
+[13.422904] (-) TimerEvent: {}
+[13.523075] (-) TimerEvent: {}
+[13.623248] (-) TimerEvent: {}
+[13.723420] (-) TimerEvent: {}
+[13.823594] (-) TimerEvent: {}
+[13.827888] (drone_dynamics) StdoutLine: {'line': b'[ 92%] Linking CXX executable quadrotor_dynamics_node\n'}
+[13.923711] (-) TimerEvent: {}
+[14.023871] (-) TimerEvent: {}
+[14.124065] (-) TimerEvent: {}
+[14.224301] (-) TimerEvent: {}
+[14.250067] (drone_dynamics) StdoutLine: {'line': b'[ 92%] Built target quadrotor_dynamics_node\n'}
+[14.252241] (drone_dynamics) StdoutLine: {'line': b'[100%] Linking CXX executable imu_gps_fusion_node\n'}
+[14.324458] (-) TimerEvent: {}
+[14.424722] (-) TimerEvent: {}
+[14.524868] (-) TimerEvent: {}
+[14.625110] (-) TimerEvent: {}
+[14.673398] (drone_dynamics) StdoutLine: {'line': b'[100%] Built target imu_gps_fusion_node\n'}
+[14.679440] (drone_dynamics) CommandEnded: {'returncode': 0}
+[14.680364] (drone_dynamics) JobProgress: {'identifier': 'drone_dynamics', 'progress': 'install'}
+[14.680513] (drone_dynamics) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.685346] (drone_dynamics) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.685664] (drone_dynamics) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.685969] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/common.hpp\n'}
+[14.690957] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/dynamics_model.hpp\n'}
+[14.696338] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/eskf.hpp\n'}
+[14.701408] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/ros_utils.hpp\n'}
+[14.708259] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/library_path.sh\n'}
+[14.716583] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/library_path.dsv\n'}
+[14.725209] (-) TimerEvent: {}
+[14.725578] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/package_run_dependencies/drone_dynamics\n'}
+[14.730506] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/parent_prefix_path/drone_dynamics\n'}
+[14.738724] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/ament_prefix_path.sh\n'}
+[14.749870] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/ament_prefix_path.dsv\n'}
+[14.758969] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/path.sh\n'}
+[14.768498] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/path.dsv\n'}
+[14.786326] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.bash\n'}
+[14.806570] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.sh\n'}
+[14.815271] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.zsh\n'}
+[14.825344] (-) TimerEvent: {}
+[14.830874] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.dsv\n'}
+[14.847984] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/package.dsv\n'}
+[14.861481] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/packages/drone_dynamics\n'}
+[14.876489] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.893781] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.912815] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/drone_dynamicsConfig.cmake\n'}
+[14.925453] (-) TimerEvent: {}
+[14.927110] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/drone_dynamicsConfig-version.cmake\n'}
+[14.939480] (drone_dynamics) StdoutLine: {'line': b'-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/package.xml\n'}
+[14.946427] (drone_dynamics) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/libdrone_dynamics_core.so\n'}
+[14.953700] (drone_dynamics) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/libdrone_dynamics_core.so" to ""\n'}
+[14.953850] (drone_dynamics) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/quadrotor_dynamics_node\n'}
+[14.958202] (drone_dynamics) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/quadrotor_dynamics_node" to ""\n'}
+[14.958308] (drone_dynamics) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/imu_gps_fusion_node\n'}
+[14.961841] (drone_dynamics) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/imu_gps_fusion_node" to ""\n'}
+[14.961928] (drone_dynamics) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/export_drone_dynamicsExport.cmake\n'}
+[14.961960] (drone_dynamics) StdoutLine: {'line': b'-- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/export_drone_dynamicsExport-noconfig.cmake\n'}
+[14.962940] (drone_dynamics) CommandEnded: {'returncode': 0}
+[14.971722] (drone_dynamics) JobEnded: {'identifier': 'drone_dynamics', 'rc': 0}
+[14.972323] (drone_map) JobStarted: {'identifier': 'drone_map'}
+[14.973768] (drone_controller) JobStarted: {'identifier': 'drone_controller'}
+[14.977894] (drone_map) JobProgress: {'identifier': 'drone_map', 'progress': 'cmake'}
+[14.978290] (drone_map) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/sim_drone/ake_drone_sim/src/drone_map', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ake/sim_drone/ake_drone_sim/install/drone_map'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_map'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble')]), 'shell': False}
+[14.980799] (drone_controller) JobProgress: {'identifier': 'drone_controller', 'progress': 'cmake'}
+[14.981289] (drone_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/sim_drone/ake_drone_sim/src/drone_controller', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ake/sim_drone/ake_drone_sim/install/drone_controller'], 'cwd': '/home/ake/sim_drone/ake_drone_sim/build/drone_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ake/sim_drone'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","messagesFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/nls.messages.json","corruptMarkerFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/tcf.json","_cacheRoot":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/4fe60c8b1cdac1c4c174f2fb180d0d758272d713","_corruptedFile":"/home/ake/.config/Code/clp/1f2ac40d74d0c6c5f470a71c37acd3b6.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('NVM_BIN', '/home/ake/.nvm/versions/node/v22.22.0/bin'), ('NVM_INC', '/home/ake/.nvm/versions/node/v22.22.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-97373307-1.12-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2857'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('COLORTERM', ''), ('NVM_DIR', '/home/ake/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ake'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ake'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ake/.local/bin:/home/ake/.codex/tmp/arg0/codex-arg0GXINfG:/home/ake/anaconda3/condabin:/usr/local/cuda-13.0/bin:/opt/ros/humble/bin:/home/ake/.nvm/versions/node/v22.22.0/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ake/.vscode/extensions/openai.chatgpt-26.707.41301-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/ake-ThinkStation-K-C2490:@/tmp/.ICE-unix/2857,unix/ake-ThinkStation-K-C2490:/tmp/.ICE-unix/2857'), ('XDG_MENU_PREFIX', 'gnome-'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72ac12ef_969c_4dc9_baed_b49f661aad5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.4711'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019f5665-40f5-78e1-87af-7df619027c94'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/sim_drone/ake_drone_sim/build/drone_controller'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/anaconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ake/.config/Code/CachedData/4fe60c8b1cdac1c4c174f2fb180d0d758272d713'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=eaf1883968f17df4696aca676a43d4a2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '751049'), ('CMAKE_PREFIX_PATH', '/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/opt/ros/humble')]), 'shell': False}
+[15.025570] (-) TimerEvent: {}
+[15.040092] (drone_map) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[15.042101] (drone_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[15.088882] (drone_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[15.089951] (drone_map) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[15.093223] (drone_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.094394] (drone_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.125691] (-) TimerEvent: {}
+[15.163452] (drone_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.163785] (drone_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.167877] (drone_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[15.167990] (drone_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.168156] (drone_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.169523] (drone_map) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[15.169719] (drone_map) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.170245] (drone_map) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.170814] (drone_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.172985] (drone_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.225877] (-) TimerEvent: {}
+[15.249120] (drone_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.251345] (drone_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.253676] (drone_map) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.253800] (drone_map) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.254086] (drone_map) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.255283] (drone_map) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[15.255780] (drone_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.255992] (drone_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.256310] (drone_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.257667] (drone_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[15.325943] (-) TimerEvent: {}
+[15.378234] (drone_map) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[15.379729] (drone_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[15.415817] (drone_map) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[15.418497] (drone_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[15.426039] (-) TimerEvent: {}
+[15.430474] (drone_map) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[15.434075] (drone_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[15.453392] (drone_map) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[15.455926] (drone_map) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[15.457485] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[15.460165] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[15.460330] (drone_map) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[15.464679] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[15.466839] (drone_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.471170] (drone_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.475440] (drone_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[15.479824] (drone_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[15.498592] (drone_map) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[15.499869] (drone_map) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[15.503245] (drone_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[15.504632] (drone_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[15.526145] (-) TimerEvent: {}
+[15.559037] (drone_map) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[15.562486] (drone_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[15.578551] (drone_map) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[15.579000] (drone_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[15.608472] (drone_map) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.609449] (drone_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.615574] (drone_map) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.616287] (drone_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.626326] (-) TimerEvent: {}
+[15.677107] (drone_map) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.677697] (drone_map) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.678579] (drone_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.679019] (drone_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.726454] (-) TimerEvent: {}
+[15.745385] (drone_map) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[15.746147] (drone_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[15.746951] (drone_map) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.747966] (drone_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.778118] (drone_map) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[15.778707] (drone_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[15.794819] (drone_map) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[15.798578] (drone_controller) StdoutLine: {'line': b'-- Found drone_msgs: 0.1.0 (/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/share/drone_msgs/cmake)\n'}
+[15.804098] (drone_map) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[15.806487] (drone_controller) StdoutLine: {'line': b'-- Found drone_dynamics: 0.1.0 (/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake)\n'}
+[15.817917] (drone_map) StdoutLine: {'line': b'-- Found drone_dynamics: 0.1.0 (/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake)\n'}
+[15.826608] (-) TimerEvent: {}
+[15.926754] (-) TimerEvent: {}
+[15.931709] (drone_map) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.933329] (drone_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.934987] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:13 (add_library):\n'}
+[15.935187] (drone_map) StderrLine: {'line': b'  Target "drone_map_core" links to target\n'}
+[15.935257] (drone_map) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.935327] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.935394] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.935463] (drone_map) StderrLine: {'line': b'\n'}
+[15.935534] (drone_map) StderrLine: {'line': b'\n'}
+[15.935607] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:13 (add_library):\n'}
+[15.935691] (drone_map) StderrLine: {'line': b'  Target "drone_map_core" links to target\n'}
+[15.935767] (drone_map) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.935837] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.935903] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.935969] (drone_map) StderrLine: {'line': b'\n'}
+[15.936033] (drone_map) StderrLine: {'line': b'\n'}
+[15.936100] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.936163] (drone_map) StderrLine: {'line': b'  Target "voxel_map_node" links to target\n'}
+[15.936227] (drone_map) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.936300] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.936370] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.936438] (drone_map) StderrLine: {'line': b'\n'}
+[15.936504] (drone_map) StderrLine: {'line': b'\n'}
+[15.936571] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.936654] (drone_map) StderrLine: {'line': b'  Target "voxel_map_node" links to target\n'}
+[15.936732] (drone_map) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.936798] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.936866] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.936933] (drone_map) StderrLine: {'line': b'\n'}
+[15.937001] (drone_map) StderrLine: {'line': b'\n'}
+[15.937065] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.937130] (drone_map) StderrLine: {'line': b'  Target "voxel_map_node" links to target\n'}
+[15.937194] (drone_map) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.937260] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.937332] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.937399] (drone_map) StderrLine: {'line': b'\n'}
+[15.937462] (drone_map) StderrLine: {'line': b'\n'}
+[15.937526] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.937591] (drone_map) StderrLine: {'line': b'  Target "voxel_map_node" links to target\n'}
+[15.937664] (drone_map) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.937733] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.937797] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.937870] (drone_map) StderrLine: {'line': b'\n'}
+[15.937940] (drone_map) StderrLine: {'line': b'\n'}
+[15.938006] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.938070] (drone_map) StderrLine: {'line': b'  Target "simulated_lidar_node" links to target\n'}
+[15.938133] (drone_map) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.938370] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.938453] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.938527] (drone_map) StderrLine: {'line': b'\n'}
+[15.938597] (drone_map) StderrLine: {'line': b'\n'}
+[15.938671] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.938747] (drone_map) StderrLine: {'line': b'  Target "simulated_lidar_node" links to target\n'}
+[15.938819] (drone_map) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.938889] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.938953] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.939020] (drone_map) StderrLine: {'line': b'\n'}
+[15.939089] (drone_map) StderrLine: {'line': b'\n'}
+[15.939156] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.939223] (drone_map) StderrLine: {'line': b'  Target "simulated_lidar_node" links to target\n'}
+[15.939293] (drone_map) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.939358] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.939420] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.939487] (drone_map) StderrLine: {'line': b'\n'}
+[15.939553] (drone_map) StderrLine: {'line': b'\n'}
+[15.939617] (drone_map) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[15.939715] (drone_map) StderrLine: {'line': b'  Target "simulated_lidar_node" links to target\n'}
+[15.939758] (drone_map) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.939788] (drone_map) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.939814] (drone_map) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.939839] (drone_map) StderrLine: {'line': b'\n'}
+[15.939865] (drone_map) StderrLine: {'line': b'\n'}
+[15.939889] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:12 (add_library):\n'}
+[15.939925] (drone_controller) StderrLine: {'line': b'  Target "drone_controller_core" links to target\n'}
+[15.939949] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.939974] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.939999] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940024] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940051] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940074] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:12 (add_library):\n'}
+[15.940097] (drone_controller) StderrLine: {'line': b'  Target "drone_controller_core" links to target\n'}
+[15.940123] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.940148] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.940171] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940197] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940222] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940246] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:16 (add_executable):\n'}
+[15.940270] (drone_controller) StderrLine: {'line': b'  Target "position_controller_node" links to target\n'}
+[15.940295] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.940322] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.940347] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940372] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940395] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940421] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:16 (add_executable):\n'}
+[15.940445] (drone_controller) StderrLine: {'line': b'  Target "position_controller_node" links to target\n'}
+[15.940469] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.940493] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.940518] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940541] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940564] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940588] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:16 (add_executable):\n'}
+[15.940611] (drone_controller) StderrLine: {'line': b'  Target "position_controller_node" links to target\n'}
+[15.940633] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::quadrotor_dynamics_node" but the target was not found.\n'}
+[15.940667] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.940692] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940718] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940742] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940767] (drone_controller) StderrLine: {'line': b'CMake Error at CMakeLists.txt:16 (add_executable):\n'}
+[15.940792] (drone_controller) StderrLine: {'line': b'  Target "position_controller_node" links to target\n'}
+[15.940816] (drone_controller) StderrLine: {'line': b'  "drone_dynamics::imu_gps_fusion_node" but the target was not found.\n'}
+[15.940840] (drone_controller) StderrLine: {'line': b'  Perhaps a find_package() call is missing for an IMPORTED target, or an\n'}
+[15.940866] (drone_controller) StderrLine: {'line': b'  ALIAS target is missing?\n'}
+[15.940895] (drone_controller) StderrLine: {'line': b'\n'}
+[15.940922] (drone_controller) StderrLine: {'line': b'\n'}
+[15.944383] (drone_map) StdoutLine: {'line': b'-- Generating done\n'}
+[15.944748] (drone_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[15.945070] (drone_map) StderrLine: {'line': b'CMake Generate step failed.  Build files cannot be regenerated correctly.\n'}
+[15.945553] (drone_controller) StderrLine: {'line': b'CMake Generate step failed.  Build files cannot be regenerated correctly.\n'}
+[15.951636] (drone_map) CommandEnded: {'returncode': 1}
+[15.952830] (drone_controller) CommandEnded: {'returncode': 1}
+[15.961385] (drone_map) JobEnded: {'identifier': 'drone_map', 'rc': 1}
+[15.961754] (drone_controller) JobEnded: {'identifier': 'drone_controller', 'rc': 'SIGINT'}
+[15.972022] (drone_planner) JobSkipped: {'identifier': 'drone_planner'}
+[15.972049] (drone_visualization) JobSkipped: {'identifier': 'drone_visualization'}
+[15.972059] (-) EventReactorShutdown: {}

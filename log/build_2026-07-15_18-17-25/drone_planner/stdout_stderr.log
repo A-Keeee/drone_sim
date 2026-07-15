@@ -1,0 +1,33 @@
+[ 33%] Built target gtest
+[ 33%] Built target gtest_main
+[ 66%] Built target drone_planner_core
+[ 83%] Built target ab_planner_node
+[100%] Built target test_planner
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/drone_planner/ab_planner_node
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/astar3d.hpp
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/bspline.hpp
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/include/ake_drone_sim/mpc_smoother.hpp
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.sh
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/library_path.dsv
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/package_run_dependencies/drone_planner
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/parent_prefix_path/drone_planner
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.sh
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/environment/path.dsv
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.bash
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.sh
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.zsh
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/local_setup.dsv
+-- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.dsv
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/ament_index/resource_index/packages/drone_planner
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig.cmake
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig-version.cmake
+-- Up-to-date symlink: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/package.xml
+-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/libdrone_planner_core.so
+-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport.cmake
+-- Up-to-date: /home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport-noconfig.cmake

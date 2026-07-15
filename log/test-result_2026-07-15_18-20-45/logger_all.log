@@ -1,0 +1,8 @@
+[0.121s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'test-result', '--verbose'][0m
+[0.121s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test-result', test_result_base='build', all=False, result_files_only=False, verbose=True, delete=False, delete_yes=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b18fe449bd0>, verb_extension=<colcon_test_result.verb.test_result.TestResultVerb object at 0x7b18fe4487f0>, main=<bound method TestResultVerb.main of <colcon_test_result.verb.test_result.TestResultVerb object at 0x7b18fe4487f0>>)[0m
+[0.124s] [34mcolcon.colcon_test_result.test_result[0m [1;30mLevel 1[0m get_test_results(ctest)
+[0.128s] [34mcolcon.colcon_test_result.test_result[0m [1;30mLevel 1[0m get_test_results(xunit)
+[0.129s] [34mcolcon.colcon_test_result.test_result.xunit[0m [1;30mDEBUG[0m [32mSkipping 'build/drone_dynamics/Testing/20260712-1642/Test.xml': the root tag is neither 'testsuite' nor 'testsuites'[0m
+[0.129s] [34mcolcon.colcon_test_result.test_result.xunit[0m [1;30mDEBUG[0m [32mSkipping 'build/drone_dynamics/Testing/20260712-1649/Test.xml': the root tag is neither 'testsuite' nor 'testsuites'[0m
+[0.131s] [34mcolcon.colcon_test_result.test_result.xunit[0m [1;30mDEBUG[0m [32mSkipping 'build/drone_planner/Testing/20260712-1642/Test.xml': the root tag is neither 'testsuite' nor 'testsuites'[0m
+[0.131s] [34mcolcon.colcon_test_result.test_result.xunit[0m [1;30mDEBUG[0m [32mSkipping 'build/drone_planner/Testing/20260712-1649/Test.xml': the root tag is neither 'testsuite' nor 'testsuites'[0m

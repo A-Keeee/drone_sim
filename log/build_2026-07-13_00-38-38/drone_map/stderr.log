@@ -1,0 +1,7 @@
+/home/ake/sim_drone/ake_drone_sim/src/drone_map/src/simulated_lidar_node.cpp: In member function ‘void ake_drone_sim::LidarNode::scan()’:
+/home/ake/sim_drone/ake_drone_sim/src/drone_map/src/simulated_lidar_node.cpp:16:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   16 |     for(double r=min_range_;r<=max_range_;r+=0.45*resolution_)if(grid_.occupiedWorld(sensor+r*dir)){hit=std::max(min_range_,r+n(rng_));break;}if(hit>0)hits.push_back(local*hit+Eigen::Vector3d(.08,0,0));}}
+      |     ^~~
+/home/ake/sim_drone/ake_drone_sim/src/drone_map/src/simulated_lidar_node.cpp:16:143: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   16 |     for(double r=min_range_;r<=max_range_;r+=0.45*resolution_)if(grid_.occupiedWorld(sensor+r*dir)){hit=std::max(min_range_,r+n(rng_));break;}if(hit>0)hits.push_back(local*hit+Eigen::Vector3d(.08,0,0));}}
+      |                                                                                                                                               ^~

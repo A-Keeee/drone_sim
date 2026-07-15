@@ -1,0 +1,20 @@
+CMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):
+  The keyword signature for target_link_libraries has already been used with
+  the target "drone_dynamics_core".  All uses of target_link_libraries with a
+  target must be either all-keyword or all-plain.
+
+  The uses of the keyword signature are here:
+
+   * CMakeLists.txt:18 (target_link_libraries)
+
+Call Stack (most recent call first):
+  CMakeLists.txt:19 (ament_target_dependencies)
+
+
+CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:50 (_install):
+  _install TARGETS given unknown argument "quadrotor_dynamics_node".
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+  CMakeLists.txt:25 (install)
+
+

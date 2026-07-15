@@ -1,0 +1,48 @@
+[0.014s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_map LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.018s] UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/CTestConfiguration.ini
+[0.018s] Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/CTestConfiguration.ini
+[0.018s]    Site: ake-ThinkStation-K-C2490
+[0.018s]    Build name: (empty)
+[0.018s]  Add coverage exclude regular expressions.
+[0.018s] Create new tag: 20260712-1649 - Experimental
+[0.018s] UpdateCTestConfiguration  from :/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/CTestConfiguration.ini
+[0.018s] Parse Config file:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/CTestConfiguration.ini
+[0.019s] Test project /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics
+[0.019s] Constructing a list of tests
+[0.019s] Done constructing a list of tests
+[0.019s] Updating test list for fixtures
+[0.019s] Added 0 tests to meet fixture requirements
+[0.019s] Checking test dependency graph...
+[0.019s] Checking test dependency graph end
+[0.019s] test 1
+[0.019s]     Start 1: test_dynamics
+[0.019s] 
+[0.019s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml" "--package-name" "drone_dynamics" "--output-file" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/ament_cmake_gtest/test_dynamics.txt" "--command" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_dynamics" "--gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml"
+[0.019s] 1: Test timeout computed to be: 60
+[0.053s] 1: -- run_test.py: invoking following command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics':
+[0.053s] 1:  - /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_dynamics --gtest_output=xml:/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml
+[0.054s] 1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[0.054s] 1: [==========] Running 2 tests from 1 test suite.
+[0.054s] 1: [----------] Global test environment set-up.
+[0.054s] 1: [----------] 2 tests from Dynamics
+[0.054s] 1: [ RUN      ] Dynamics.EqualMotorsProduceNoTorque
+[0.062s] 1: [       OK ] Dynamics.EqualMotorsProduceNoTorque (8 ms)
+[0.062s] 1: [ RUN      ] Dynamics.QuaternionRemainsNormalized
+[0.077s] 1: [       OK ] Dynamics.QuaternionRemainsNormalized (14 ms)
+[0.077s] 1: [----------] 2 tests from Dynamics (22 ms total)
+[0.077s] 1: 
+[0.077s] 1: [----------] Global test environment tear-down
+[0.077s] 1: [==========] 2 tests from 1 test suite ran. (22 ms total)
+[0.077s] 1: [  PASSED  ] 2 tests.
+[0.077s] 1: -- run_test.py: return code 0
+[0.077s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml'
+[0.078s] 1: -- run_test.py: verify result file '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/test_results/drone_dynamics/test_dynamics.gtest.xml'
+[0.083s] 1/1 Test #1: test_dynamics ....................   Passed    0.06 sec
+[0.083s] 
+[0.083s] 100% tests passed, 0 tests failed out of 1
+[0.083s] 
+[0.083s] Label Time Summary:
+[0.083s] gtest    =   0.06 sec*proc (1 test)
+[0.083s] 
+[0.083s] Total Test time (real) =   0.06 sec
+[0.086s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics:/home/ake/sim_drone/ake_drone_sim/install/drone_visualization:/home/ake/sim_drone/ake_drone_sim/install/drone_planner:/home/ake/sim_drone/ake_drone_sim/install/drone_controller:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs:/home/ake/sim_drone/ake_drone_sim/install/drone_map LD_LIBRARY_PATH=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_controller/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_msgs/lib:/home/ake/sim_drone/ake_drone_sim/install/drone_map/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ake/sim_drone/ake_drone_sim/build/drone_map/voxel_map_node" "/home/ake/sim_drone/ake_drone_sim/build/drone_map/simulated_lidar_node" "TARGETS" "voxel_map_node" "simulated_lidar_node" "RUNTIME_DESTINATION" "lib/drone_map")

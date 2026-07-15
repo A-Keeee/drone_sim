@@ -1,0 +1,99 @@
+[0.006s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.172s] -- Detecting C compiler ABI info - done
+[0.176s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.176s] -- Detecting C compile features
+[0.176s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.234s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.240s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.379s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.416s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.431s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.455s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.457s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.462s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.468s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.476s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.500s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.501s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.558s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.581s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.608s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.612s] -- Looking for pthread.h
+[0.726s] -- Looking for pthread.h - found
+[0.726s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.789s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.790s] -- Found Threads: TRUE  
+[0.822s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.829s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.838s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.848s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.853s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.902s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.906s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.911s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.912s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.968s] -- Configuring done
+[0.983s] -- Generating done
+[0.989s] -- Build files have been written to: /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics
+[0.996s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/sim_drone/ake_drone_sim/src/drone_dynamics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics
+[0.997s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics -- -j20 -l20
+[1.037s] [  7%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[1.040s] [ 15%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[1.042s] [ 23%] Building CXX object CMakeFiles/drone_dynamics_core.dir/src/eskf.cpp.o
+[1.042s] [ 30%] Building CXX object CMakeFiles/drone_dynamics_core.dir/src/dynamics_model.cpp.o
+[1.505s] [ 38%] Linking CXX static library libgtest_main.a
+[1.532s] [ 38%] Built target gtest_main
+[2.740s] [ 46%] Linking CXX static library libgtest.a
+[2.776s] [ 46%] Built target gtest
+[7.418s] [ 53%] Linking CXX shared library libdrone_dynamics_core.so
+[7.773s] [ 53%] Built target drone_dynamics_core
+[7.784s] [ 61%] Building CXX object CMakeFiles/imu_gps_fusion_node.dir/src/imu_gps_fusion_node.cpp.o
+[7.790s] [ 76%] Building CXX object CMakeFiles/quadrotor_dynamics_node.dir/src/quadrotor_dynamics_node.cpp.o
+[7.790s] [ 76%] Building CXX object CMakeFiles/test_dynamics.dir/test/test_dynamics.cpp.o
+[8.919s] [ 84%] Linking CXX executable test_dynamics
+[9.126s] [ 84%] Built target test_dynamics
+[14.218s] [ 92%] Linking CXX executable quadrotor_dynamics_node
+[14.634s] [ 92%] Built target quadrotor_dynamics_node
+[14.651s] [100%] Linking CXX executable imu_gps_fusion_node
+[15.085s] [100%] Built target imu_gps_fusion_node
+[15.093s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics -- -j20 -l20
+[15.094s] Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics
+[15.098s] -- Install configuration: ""
+[15.098s] -- Execute custom install script
+[15.098s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/quadrotor_dynamics_node
+[15.106s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/drone_dynamics/imu_gps_fusion_node
+[15.122s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/common.hpp
+[15.135s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/dynamics_model.hpp
+[15.148s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/eskf.hpp
+[15.165s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/include/ake_drone_sim/ros_utils.hpp
+[15.182s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/library_path.sh
+[15.197s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/library_path.dsv
+[15.214s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/package_run_dependencies/drone_dynamics
+[15.228s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/parent_prefix_path/drone_dynamics
+[15.239s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/ament_prefix_path.sh
+[15.247s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/ament_prefix_path.dsv
+[15.252s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/path.sh
+[15.257s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/environment/path.dsv
+[15.264s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.bash
+[15.272s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.sh
+[15.285s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.zsh
+[15.299s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/local_setup.dsv
+[15.310s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/package.dsv
+[15.325s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/ament_index/resource_index/packages/drone_dynamics
+[15.340s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/ament_cmake_export_targets-extras.cmake
+[15.356s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.375s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/drone_dynamicsConfig.cmake
+[15.389s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/drone_dynamicsConfig-version.cmake
+[15.401s] -- Symlinking: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/package.xml
+[15.415s] -- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/libdrone_dynamics_core.so
+[15.428s] -- Set runtime path of "/home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/lib/libdrone_dynamics_core.so" to ""
+[15.429s] -- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/export_drone_dynamicsExport.cmake
+[15.429s] -- Installing: /home/ake/sim_drone/ake_drone_sim/install/drone_dynamics/share/drone_dynamics/cmake/export_drone_dynamicsExport-noconfig.cmake
+[15.434s] Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics

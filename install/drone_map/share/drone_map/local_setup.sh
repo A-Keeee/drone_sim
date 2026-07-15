@@ -1,0 +1,1 @@
+/home/ake/sim_drone/ake_drone_sim/build/drone_map/ament_cmake_environment_hooks/local_setup.sh

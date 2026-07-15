@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>drone_visualization</name><version>0.1.0</version>
+  <description>RViz markers and bringup resources for the modular drone simulation.</description>
+  <maintainer email="ake@example.com">ake</maintainer><license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend><depend>nav_msgs</depend><depend>geometry_msgs</depend><depend>visualization_msgs</depend>
+  <depend>drone_dynamics</depend>
+  <exec_depend>drone_msgs</exec_depend><exec_depend>drone_controller</exec_depend><exec_depend>drone_map</exec_depend><exec_depend>drone_planner</exec_depend>
+  <exec_depend>ros2launch</exec_depend><exec_depend>rviz2</exec_depend><exec_depend>rclpy</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

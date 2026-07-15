@@ -1,0 +1,3 @@
+source;share/drone_map/environment/ament_prefix_path.sh
+source;share/drone_map/environment/library_path.sh
+source;share/drone_map/environment/path.sh

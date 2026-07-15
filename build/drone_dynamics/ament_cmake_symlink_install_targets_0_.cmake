@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/quadrotor_dynamics_node" "/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/imu_gps_fusion_node" "TARGETS" "quadrotor_dynamics_node" "imu_gps_fusion_node" "RUNTIME_DESTINATION" "lib/drone_dynamics")

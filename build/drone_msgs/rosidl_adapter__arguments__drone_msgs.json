@@ -1,0 +1,6 @@
+{
+  "package_name": "drone_msgs",
+  "non_idl_tuples": [
+    "/home/ake/sim_drone/ake_drone_sim/src/drone_msgs:msg/TrajectorySetpoint.msg"
+  ]
+}
