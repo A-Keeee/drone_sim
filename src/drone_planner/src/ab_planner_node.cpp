@@ -11,6 +11,7 @@
 #include <std_msgs/msg/string.hpp>
 
 #include <deque>
+#include <future>
 
 using namespace std::chrono_literals;
 
@@ -86,6 +87,15 @@ class PlannerNode final : public rclcpp::Node {
   }
 
  private:
+  struct AsyncPlanResult {
+    uint64_t generation{0};
+    AStar3D::Result search;
+    bool use_polyline{false};
+    BSpline spline;
+    ArcLengthTable table;
+    std::vector<Eigen::Vector3d> spline_samples;
+  };
+
   void mapCallback(const sensor_msgs::msg::PointCloud2::SharedPtr message) {
     const bool first_map = !have_map_;
     grid_.clear();
@@ -115,6 +125,7 @@ class PlannerNode final : public rclcpp::Node {
     goal_yaw_ = std::atan2(2 * (q.w() * q.z() + q.x() * q.y()),
                            1 - 2 * (q.y() * q.y() + q.z() * q.z()));
     have_goal_ = true;
+    ++plan_generation_;
     need_plan_ = true;
     goal_reached_ = false;
     hold_active_ = false;
@@ -134,7 +145,8 @@ class PlannerNode final : public rclcpp::Node {
     last_lidar_ = now();
     have_lidar_ = true;
 
-    if (!goal_reached_ && spline_.valid() && !use_polyline_) {
+    if (!planning_ && path_ready_ && !goal_reached_ && spline_.valid() &&
+        !use_polyline_) {
       int hits = 0;
       for (const auto &history_frame : lidar_history_) {
         for (const auto &obstacle : history_frame) {
@@ -158,9 +170,9 @@ class PlannerNode final : public rclcpp::Node {
     }
   }
 
-  bool splineSafe(const BSpline &spline) const {
+  static bool splineSafe(const BSpline &spline, const VoxelGrid &inflated) {
     for (double u = 0; u <= spline.maxU(); u += 0.03) {
-      if (inflated_.occupiedWorld(spline.position(u))) return false;
+      if (inflated.occupiedWorld(spline.position(u))) return false;
     }
     return true;
   }
@@ -180,53 +192,101 @@ class PlannerNode final : public rclcpp::Node {
     publisher->publish(path);
   }
 
-  void plan() {
+  void startPlan() {
     need_plan_ = false;
-    hold_active_ = false;
+    planning_ = true;
+    hold_position_ = position_;
+    hold_position_.z() = std::max(hold_position_.z(), 0.05);
+    hold_active_ = true;
+    path_ready_ = false;
     command_acceleration_.setZero();
-    const auto result = astar_.plan(inflated_, position_, goal_);
-    if (!result.success) {
-      path_ready_ = false;
-      status("PLAN_FAILED:" + result.reason);
+    status("PLANNING_HOLD");
+
+    const uint64_t generation = plan_generation_;
+    const AStar3D astar = astar_;
+    const VoxelGrid inflated = inflated_;
+    const Eigen::Vector3d start = position_;
+    const Eigen::Vector3d goal = goal_;
+    planning_future_ = std::async(
+        std::launch::async,
+        [generation, astar, inflated, start, goal]() mutable {
+          AsyncPlanResult output;
+          output.generation = generation;
+          output.search = astar.plan(inflated, start, goal);
+          if (!output.search.success) return output;
+
+          auto controls = makeSplineControlPoints(output.search.path, 0.55);
+          BSpline candidate;
+          candidate.setControlPoints(controls, 0.7);
+          if (!candidate.valid() || !splineSafe(candidate, inflated)) {
+            if (output.search.path.size() < 2) {
+              output.search.success = false;
+              output.search.reason = "path_too_short";
+              return output;
+            }
+            controls = makeSplineControlPoints(output.search.path, 0.1);
+            candidate.setControlPoints(controls, 0.25);
+            if (!candidate.valid() || !splineSafe(candidate, inflated)) {
+              output.use_polyline = true;
+              return output;
+            }
+          }
+
+          output.spline = candidate;
+          output.table.build(output.spline);
+          for (double u = 0; u <= output.spline.maxU(); u += 0.03) {
+            output.spline_samples.push_back(output.spline.position(u));
+          }
+          return output;
+        });
+  }
+
+  void finishPlanIfReady() {
+    if (!planning_ ||
+        planning_future_.wait_for(std::chrono::seconds(0)) !=
+            std::future_status::ready) {
       return;
     }
 
-    path_ = result.path;
-    publishPath(path_, planned_path_pub_);
-    use_polyline_ = false;
-    auto controls = makeSplineControlPoints(path_, 0.55);
-    BSpline candidate;
-    candidate.setControlPoints(controls, 0.7);
-    if (candidate.valid() && splineSafe(candidate)) {
-      spline_ = candidate;
-    } else {
-      if (path_.size() < 2) {
-        path_ready_ = false;
-        return;
-      }
-      controls = makeSplineControlPoints(path_, 0.1);
-      candidate.setControlPoints(controls, 0.25);
-      if (!candidate.valid() || !splineSafe(candidate)) {
-        use_polyline_ = true;
-        path_ready_ = true;
-        publishPath(path_, spline_path_pub_);
-        status("EXECUTING_ASTAR_FALLBACK expanded=" +
-               std::to_string(result.expanded));
-        return;
-      }
-      spline_ = candidate;
+    AsyncPlanResult output;
+    try {
+      output = planning_future_.get();
+    } catch (const std::exception &exception) {
+      planning_ = false;
+      path_ready_ = false;
+      status("PLAN_EXCEPTION:" + std::string(exception.what()));
+      return;
+    }
+    planning_ = false;
+    if (output.generation != plan_generation_) {
+      need_plan_ = true;
+      status("PLAN_SUPERSEDED");
+      return;
+    }
+    if (!output.search.success) {
+      path_ready_ = false;
+      status("PLAN_FAILED:" + output.search.reason);
+      return;
     }
 
-    table_.build(spline_);
+    path_ = std::move(output.search.path);
+    publishPath(path_, planned_path_pub_);
+    use_polyline_ = output.use_polyline;
     current_u_ = 0.0;
     current_s_ = 0.0;
     path_ready_ = true;
-    std::vector<Eigen::Vector3d> samples;
-    for (double u = 0; u <= spline_.maxU(); u += 0.03) {
-      samples.push_back(spline_.position(u));
+    hold_active_ = false;
+    if (use_polyline_) {
+      publishPath(path_, spline_path_pub_);
+      status("EXECUTING_ASTAR_FALLBACK expanded=" +
+             std::to_string(output.search.expanded));
+      return;
     }
-    publishPath(samples, spline_path_pub_);
-    status("EXECUTING expanded=" + std::to_string(result.expanded));
+
+    spline_ = std::move(output.spline);
+    table_ = std::move(output.table);
+    publishPath(output.spline_samples, spline_path_pub_);
+    status("EXECUTING expanded=" + std::to_string(output.search.expanded));
   }
 
   void publishReference(const Eigen::Vector3d &position,
@@ -405,6 +465,8 @@ class PlannerNode final : public rclcpp::Node {
   void tick() {
     if (!have_odom_) return;
 
+    finishPlanIfReady();
+
     if (position_.z() < cruise_ - 0.25) {
       hold_active_ = false;
       publishReference({takeoff_xy_.x(), takeoff_xy_.y(), cruise_},
@@ -429,7 +491,15 @@ class PlannerNode final : public rclcpp::Node {
       lockGoal();
       return;
     }
-    if (need_plan_) plan();
+    if (planning_) {
+      hold();
+      return;
+    }
+    if (need_plan_) {
+      startPlan();
+      hold();
+      return;
+    }
     if (!path_ready_) {
       hold();
       return;
@@ -488,6 +558,9 @@ class PlannerNode final : public rclcpp::Node {
   bool use_polyline_{false};
   bool goal_reached_{false};
   bool hold_active_{false};
+  bool planning_{false};
+  uint64_t plan_generation_{0};
+  std::future<AsyncPlanResult> planning_future_;
   int threat_hits_{0};
   int lidar_replan_count_{0};
   rclcpp::Time last_lidar_{0, 0, RCL_ROS_TIME};

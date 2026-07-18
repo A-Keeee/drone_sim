@@ -91,16 +91,34 @@ class ControllerNode final : public rclcpp::Node {
     last_tick_ = stamp;
 
     Eigen::Vector4d rpm = Eigen::Vector4d::Zero();
-    const bool fresh = have_odom_ && have_reference_ &&
-        (stamp - last_odom_).seconds() <= odom_timeout_ &&
+    const bool odom_fresh = have_odom_ &&
+        (stamp - last_odom_).seconds() <= odom_timeout_;
+    const bool reference_fresh = have_reference_ &&
         (stamp - last_reference_).seconds() <= reference_timeout_;
-    if (fresh) {
+    if (odom_fresh && reference_fresh) {
       rpm = controller_.compute(state_, reference_, dt);
-      timeout_active_ = false;
-    } else if (!timeout_active_) {
+      reference_hold_active_ = false;
+      zero_rpm_active_ = false;
+    } else if (odom_fresh && have_reference_) {
+      if (!reference_hold_active_) {
+        failsafe_reference_ = reference_;
+        failsafe_reference_.position = state_.position;
+        failsafe_reference_.velocity.setZero();
+        failsafe_reference_.acceleration.setZero();
+        failsafe_reference_.yaw_rate = 0.0;
+        controller_.reset();
+        reference_hold_active_ = true;
+        RCLCPP_WARN(get_logger(),
+                    "stale reference: holding current position instead of zero RPM");
+      }
+      rpm = controller_.compute(state_, failsafe_reference_, dt);
+      zero_rpm_active_ = false;
+    } else if (!zero_rpm_active_) {
       controller_.reset();
-      timeout_active_ = true;
-      RCLCPP_WARN(get_logger(), "stale odometry/reference: commanding zero RPM");
+      reference_hold_active_ = false;
+      zero_rpm_active_ = true;
+      RCLCPP_WARN(get_logger(),
+                  "stale odometry or no reference: commanding zero RPM");
     }
 
     std_msgs::msg::Float32MultiArray message;
@@ -114,11 +132,13 @@ class ControllerNode final : public rclcpp::Node {
   Se3Controller controller_;
   ControlState state_;
   ControlReference reference_;
+  ControlReference failsafe_reference_;
   double odom_timeout_{0.20};
   double reference_timeout_{2.50};
   bool have_odom_{false};
   bool have_reference_{false};
-  bool timeout_active_{true};
+  bool reference_hold_active_{false};
+  bool zero_rpm_active_{true};
   rclcpp::Time last_odom_{0, 0, RCL_ROS_TIME};
   rclcpp::Time last_reference_{0, 0, RCL_ROS_TIME};
   rclcpp::Time last_tick_{0, 0, RCL_ROS_TIME};

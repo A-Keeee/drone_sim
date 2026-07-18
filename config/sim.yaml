@@ -42,8 +42,8 @@ position_controller_node:
     max_tilt: 0.40
     max_total_thrust_ratio: 1.8
     odom_timeout: 0.20
-    # A worst-case 3-D A* search currently takes about 1.6 s synchronously.
-    # Keep the last safe hover reference during that computation.
+    # The planner runs A* asynchronously and continuously publishes a hover
+    # reference while searching. This timeout remains a controller-side fallback.
     reference_timeout: 2.50
 
 voxel_map_node:
