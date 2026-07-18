@@ -1,18 +1,15 @@
-# AKE Drone Sim：ROS2 四旋翼动力学、控制与三维避障仿真系统
+# AKE Drone Sim：ROS2 四旋翼动力学、<br>控制与三维避障仿真系统
 
-> 实验报告（Markdown 版本）
->
-> 开发环境：Ubuntu 22.04 / ROS2 Humble / C++17
->
-> 仓库：`A-Keeee/drone_sim`
->
-> 报告日期：2026-07-18
 
 ## 摘要
 
-本文设计并实现了一套不依赖 Gazebo、AirSim 的轻量级 ROS2 四旋翼仿真系统。系统以四个电机转速 RPM 为动力学输入，仿真四旋翼的位置、速度、姿态、角速度和电机动态；使用带前馈的 SE(3) 串级控制器，将位置、速度、加速度和偏航参考转换为总推力、三轴力矩及四电机 RPM；使用模拟 IMU/GPS 和 15 状态误差状态卡尔曼滤波器（ESKF）产生闭环反馈里程计；使用三维 voxel grid、前向模拟 LiDAR、26 邻域 3D A*、三次 B-spline 和受速度/加速度/jerk 约束的滚动预测器完成静态避障；最后使用 RViz2 展示无人机、目标、点云地图、感知点云、规划路径和实际轨迹。
+本文设计并实现了一套不依赖 Gazebo、AirSim 的轻量级 ROS2 四旋翼仿真系统。系统以四个电机转速 RPM 为动力学输入，仿真位置、速度、姿态、角速度和电机动态。带前馈的 SE(3) 串级控制器将位置、速度、加速度和偏航参考转换为总推力、三轴力矩及四电机 RPM。
 
-系统已在从地面悬停、单目标、多目标正方形、五障碍避障和强制爬升绕行五类场景中完成本机实跑。悬停最终误差约为 `0.043 m`；单目标 `(2,1,1.5) m` 的最终误差约为 `0.041 m`；多目标任务的 5 个阶段均成功到达；五障碍目标 `(8,0,1.5) m` 的最终误差约为 `0.063 m`，中心轨迹到障碍物 AABB 表面的最小距离约为 `0.743 m`；强制爬升场景的最小距离约为 `0.938 m`。两项避障净空均大于设置的 `0.5 m` 安全距离。针对早期同步 A* 阻塞参考发布、导致控制器超时并输出零 RPM 的失败案例，本文将搜索和平滑碰撞检查移入后台线程，并增加控制器当前位置悬停降级策略。修复后五障碍规划耗时仍超过旧参考超时阈值，但无人机能持续悬停，不再发生坠地。
+感知与规划部分使用模拟 IMU/GPS 和 15 状态误差状态卡尔曼滤波器（ESKF）产生闭环反馈里程计，并通过三维 voxel grid、前向模拟 LiDAR、26 邻域 3D A*、三次 B-spline 和受速度/加速度/jerk 约束的滚动预测器完成静态避障。RViz2 用于展示无人机、目标、点云地图、感知点云、规划路径和实际轨迹。
+
+系统已完成从地面悬停、单目标、多目标正方形、五障碍避障和强制爬升绕行五类实跑。各目标最终误差均小于 `0.3 m`；五障碍和强制爬升场景扣除机体半径后的最小净空分别为 `0.563 m` 和 `0.758 m`，均大于 `0.5 m` 安全距离。
+
+针对早期同步 A* 阻塞参考发布、导致控制器超时并输出零 RPM 的失败案例，本文将搜索和平滑碰撞检查移入后台线程，并增加控制器当前位置悬停降级策略。修复后，即使五障碍规划耗时仍超过旧参考超时阈值，无人机也能持续悬停，不再坠地。
 
 **关键词：** ROS2；四旋翼动力学；SE(3) 控制；ESKF；3D A*；B-spline；voxel map；避障
 
@@ -55,33 +52,41 @@
 ### 2.1 节点、Topic 与数据流
 
 ```mermaid
-flowchart LR
-    U[命令行 / RViz Goal] -->|/drone/goal<br/>PoseStamped| P[ab_planner_node]
-    M[voxel_map_node] -->|/map/obstacles<br/>PointCloud2| P
-    M -->|/map/obstacles| L[simulated_lidar_node]
+flowchart TB
+    U[命令行 / RViz Goal]
+    M[voxel_map_node]
+    L[simulated_lidar_node]
+    P[ab_planner_node]
+    C[position_controller_node]
+    D[quadrotor_dynamics_node]
+    E[imu_gps_fusion_node]
+    V[RViz2 / visualization_node]
+    R[实验记录与绘图脚本]
 
-    D[quadrotor_dynamics_node] -->|/drone/ground_truth/odom<br/>Odometry| L
-    L -->|/drone/lidar/points<br/>PointCloud2| P
+    U -->|/drone/goal · PoseStamped| P
+    M -->|/map/obstacles · PointCloud2| P
+    M --> L
+    D -->|ground truth odom| L
+    L -->|/drone/lidar/points| P
 
-    D -->|/drone/imu<br/>Imu| E[imu_gps_fusion_node]
-    D -->|/drone/gps_pose<br/>PoseWithCovarianceStamped| E
-    E -->|/drone/odom<br/>Odometry| P
-    E -->|/drone/odom| C[position_controller_node]
+    D -->|IMU + GPS pose| E
+    E -->|/drone/odom| P
+    E --> C
+    P -->|/drone/reference| C
+    C -->|/drone/motor_rpm_cmd| D
 
-    P -->|/drone/reference<br/>TrajectorySetpoint| C
-    C -->|/drone/motor_rpm_cmd<br/>Float32MultiArray| D
-
-    E -->|/drone/path<br/>Path| V[RViz2 / visualization_node]
-    P -->|A* / B-spline / 预测路径| V
-    M -->|障碍 Marker / PointCloud2| V
+    E -->|flight path + TF| V
+    P -->|A* + B-spline + prediction| V
+    M -->|obstacle markers| V
     P -->|/drone/safe_goal| V
-    D -->|/drone/motor_rpm| R[实验记录与绘图脚本]
-    D -->|真值 Odometry| R
+    D -->|ground truth + RPM| R
 ```
+
+*图 2-1　系统节点、Topic 与闭环数据流。*
 
 系统特意将真值与反馈估计分开：`/drone/ground_truth/odom` 只进入传感器仿真和评测，不直接进入控制器；控制器和规划器只使用 ESKF 输出的 `/drone/odom`。这样能够暴露传感器噪声和估计误差对闭环系统的影响。
 
-### 2.2 主要接口
+### 2.2 主要接口0
 
 | 节点 | 订阅 | 发布 | 典型频率 |
 |---|---|---|---:|
@@ -156,10 +161,11 @@ $$
 当前 $k_F=8.54858\times10^{-6}$，$k_M=1.6\times10^{-7}$。对臂长为 $l$ 的 X 型布局，定义 $a=l/\sqrt{2}$，总推力与三轴力矩满足
 
 $$
+\begin{aligned}
 \begin{bmatrix}
 T\\ \tau_x\\ \tau_y\\ \tau_z
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 1&1&1&1\\
 a&a&-a&-a\\
@@ -167,7 +173,9 @@ a&a&-a&-a\\
 c&-c&c&-c
 \end{bmatrix}
 \begin{bmatrix}F_1\\F_2\\F_3\\F_4\end{bmatrix},
-\qquad c=\frac{k_M}{k_F}.
+\\[2mm]
+c&=\frac{k_M}{k_F}.
+\end{aligned}
 $$
 
 动力学与控制器共用同一矩阵约定，避免电机编号或正负号不一致造成 roll/pitch/yaw 方向错误。
@@ -575,7 +583,19 @@ $$
 | 预测 | 时域/步长 | `30 / 0.05 s` |
 | 预测 | 速度/加速度/jerk 上限 | `1.2 / 2.0 / 3.0` |
 
-### 7.3 悬停实验 `(0,0,1.5)`
+### 7.3 最低验收结果总览
+
+| 验收场景 | 最终误差 | 时间 | 安全与稳定性 | 结论 |
+|---|---:|---:|---|:---:|
+| 从地面悬停 `(0,0,1.5)` | `0.043 m` | `1.90 s` | RPM 饱和 `0` | 通过 |
+| 单目标 `(2,1,1.5)` | `0.041 m` | `3.36 s` | RPM 饱和 `0` | 通过 |
+| 多目标正方形 | `0.067 m` | `16.44 s` 总时长 | 5/5 阶段到达 | 通过 |
+| 五障碍 `(8,0,1.5)` | `0.063 m` | `25.61 s` | 机体净空 `0.563 m` | 通过 |
+| 强制爬升 `(8,0,1.5)` | `0.039 m` | `16.57 s` | 机体净空 `0.758 m` | 通过 |
+
+表中“最小机体净空”由中心轨迹到障碍 AABB 的距离减去 `0.18 m` 机体半径得到。两项避障实验均满足 `0.5 m` 安全距离要求。
+
+### 7.4 悬停实验 `(0,0,1.5)`
 
 记录器在 launch 前启动，首个真值样本高度为 `0.05 m`，因此曲线包含从地面起飞的过程。结果为：
 
@@ -586,17 +606,14 @@ $$
 - 最大电机转速约 `5777 RPM`，9000 RPM 饱和样本为 `0`；
 - 目标锁定后位置、速度、加速度参考保持不变。
 
-![悬停位置曲线](results/hover_position.png)
-
-![悬停误差曲线](results/hover_error.png)
-
-![悬停 RPM 曲线](results/hover_rpm.png)
-
-![悬停姿态曲线](results/hover_attitude.png)
+| 悬停响应 | 悬停稳定性 |
+|:---:|:---:|
+| <img src="results/hover_position.png" alt="悬停位置曲线" width="100%"><br>**图 7-1　悬停位置曲线** | <img src="results/hover_error.png" alt="悬停误差曲线" width="100%"><br>**图 7-2　悬停误差曲线** |
+| <img src="results/hover_rpm.png" alt="悬停 RPM 曲线" width="100%"><br>**图 7-3　悬停 RPM 曲线** | <img src="results/hover_attitude.png" alt="悬停姿态曲线" width="100%"><br>**图 7-4　悬停姿态曲线** |
 
 该结果满足任务提出的悬停误差收敛到 `0.3 m` 以内的要求。
 
-### 7.4 单目标实验 `(2,1,1.5)`
+### 7.5 单目标实验 `(2,1,1.5)`
 
 空旷地图实跑结果：
 
@@ -607,13 +624,12 @@ $$
 - 最大 roll/pitch 绝对值约 `7.74°`，最大电机转速约 `5215 RPM`；
 - 无姿态发散或 RPM 饱和。
 
-![单目标轨迹](results/point_trajectory.png)
+| 单目标轨迹与误差 | 单目标稳定性 |
+|:---:|:---:|
+| <img src="results/point_trajectory.png" alt="单目标轨迹" width="100%"><br>**图 7-5　单目标轨迹** | <img src="results/point_error.png" alt="单目标误差" width="100%"><br>**图 7-6　单目标误差** |
+| <img src="results/point_rpm.png" alt="单目标 RPM" width="100%"><br>**图 7-7　单目标 RPM** | <img src="results/point_attitude.png" alt="单目标姿态" width="100%"><br>**图 7-8　单目标姿态** |
 
-![单目标误差](results/point_error.png)
-
-![单目标 RPM](results/point_rpm.png)
-
-### 7.5 多目标点任务
+### 7.6 多目标点任务
 
 `waypoint_mission.py` 提供如下顺序航点：
 
@@ -631,13 +647,12 @@ $$
 - 实际采样轨迹累计长度约 `8.95 m`；
 - 最大电机转速约 `5358 RPM`，无 RPM 饱和。
 
-![多目标实际轨迹](results/waypoint_trajectory.png)
+| 多目标轨迹 | 多目标误差与 RPM |
+|:---:|:---:|
+| <img src="results/waypoint_trajectory.png" alt="多目标实际轨迹" width="100%"><br>**图 7-9　多目标实际轨迹** | <img src="results/waypoint_error.png" alt="多目标活动目标误差" width="100%"><br>**图 7-10　活动目标误差** |
+| <img src="results/waypoint_rpm.png" alt="多目标 RPM" width="100%"><br>**图 7-11　多目标 RPM** |  |
 
-![多目标活动目标误差](results/waypoint_error.png)
-
-![多目标 RPM](results/waypoint_rpm.png)
-
-### 7.6 五障碍三维避障 `(8,0,1.5)`
+### 7.7 五障碍三维避障 `(8,0,1.5)`
 
 修复异步规划后，使用 `sim.launch.py` 完成 45 秒回归：
 
@@ -650,17 +665,13 @@ $$
 - 9002 个采样中 RPM 饱和样本为 `0`，最大 roll/pitch 绝对值约 `6.44°`；
 - 无穿障、NaN、姿态发散或零 RPM 坠地。
 
-![五障碍位置曲线](results/avoidance_position.png)
+| 五障碍轨迹 | 五障碍安全性与稳定性 |
+|:---:|:---:|
+| <img src="results/avoidance_position.png" alt="五障碍位置曲线" width="100%"><br>**图 7-12　五障碍位置曲线** | <img src="results/avoidance_trajectory.png" alt="五障碍轨迹" width="100%"><br>**图 7-13　五障碍实际轨迹** |
+| <img src="results/avoidance_clearance.png" alt="五障碍最小距离" width="100%"><br>**图 7-14　五障碍最小距离** | <img src="results/avoidance_error.png" alt="五障碍误差" width="100%"><br>**图 7-15　五障碍目标误差** |
+| <img src="results/avoidance_rpm.png" alt="五障碍 RPM" width="100%"><br>**图 7-16　五障碍 RPM** | <img src="results/avoidance_attitude.png" alt="五障碍姿态" width="100%"><br>**图 7-17　五障碍姿态** |
 
-![五障碍轨迹](results/avoidance_trajectory.png)
-
-![五障碍最小距离](results/avoidance_clearance.png)
-
-![五障碍误差](results/avoidance_error.png)
-
-![五障碍 RPM](results/avoidance_rpm.png)
-
-### 7.7 固定种子随机三维场景
+### 7.8 固定种子随机三维场景
 
 `random.launch.py seed:=20260715` 生成 14 个随机盒体和约 3204 个占用体素。已有实跑记录为：
 
@@ -672,7 +683,7 @@ $$
 - 扣除体素半对角线后的保守中心净空约 `0.630 m`；
 - 无穿障、NaN、姿态发散或持续 RPM 饱和。
 
-### 7.8 狭窄/明显绕行场景
+### 7.9 狭窄/明显绕行场景
 
 `narrow.launch.py` 使用贯穿 y 方向、顶部高度为 `3.0 m` 的墙体，并用四个边界柱限制侧向绕行。目标仍为 `(8,0,1.5) m`。50 秒实跑结果为：
 
@@ -684,15 +695,12 @@ $$
 - 最小中心轨迹—AABB 距离约 `0.938 m`；扣除机体半径后的表面净空约 `0.758 m > 0.5 m`；
 - 最大 roll/pitch 绝对值约 `8.32°`，无 RPM 饱和。
 
-![狭窄场景实际轨迹](results/narrow_trajectory.png)
+| 狭窄场景轨迹 | 狭窄场景安全性与稳定性 |
+|:---:|:---:|
+| <img src="results/narrow_trajectory.png" alt="狭窄场景实际轨迹" width="100%"><br>**图 7-18　狭窄场景实际轨迹** | <img src="results/narrow_position.png" alt="狭窄场景位置与爬升" width="100%"><br>**图 7-19　位置与爬升曲线** |
+| <img src="results/narrow_clearance.png" alt="狭窄场景最小净空" width="100%"><br>**图 7-20　狭窄场景最小净空** | <img src="results/narrow_rpm.png" alt="狭窄场景 RPM" width="100%"><br>**图 7-21　狭窄场景 RPM** |
 
-![狭窄场景位置与爬升](results/narrow_position.png)
-
-![狭窄场景最小净空](results/narrow_clearance.png)
-
-![狭窄场景 RPM](results/narrow_rpm.png)
-
-### 7.9 单元测试与自动评测
+### 7.10 单元测试与自动评测
 
 当前测试覆盖：
 
@@ -704,7 +712,7 @@ $$
 
 最近一次 `colcon test-result --verbose` 汇总为 `7 tests, 0 errors, 0 failures, 0 skipped`。此外，`run_experiment.py`、`plot_results.py` 和 `waypoint_mission.py` 提供脚本化记录、绘图和多航点执行。
 
-### 7.10 失败案例：同步规划导致零 RPM 坠地
+### 7.11 失败案例：同步规划导致零 RPM 坠地
 
 #### 失败现象
 
