@@ -1,4 +1,0 @@
-Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics -- -j20 -l20
-Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics -- -j20 -l20
-Invoking command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics
-Invoked command in '/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/sim_drone/ake_drone_sim/build/drone_dynamics

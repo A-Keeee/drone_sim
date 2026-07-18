@@ -1,9 +1,0 @@
-[  8%] Building CXX object CMakeFiles/drone_planner_core.dir/src/bspline.cpp.o
-[ 25%] Built target gtest_main
-[ 41%] Built target gtest
-[ 50%] Linking CXX shared library libdrone_planner_core.so
-[ 66%] Built target drone_planner_core
-[ 75%] Building CXX object CMakeFiles/test_planner.dir/test/test_planner.cpp.o
-[ 83%] Building CXX object CMakeFiles/ab_planner_node.dir/src/ab_planner_node.cpp.o
-[ 91%] Linking CXX executable test_planner
-[ 91%] Built target test_planner

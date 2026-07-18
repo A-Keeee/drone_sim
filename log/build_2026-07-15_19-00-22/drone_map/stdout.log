@@ -1,3 +1,0 @@
-[ 33%] Built target drone_map_core
-[ 50%] Building CXX object CMakeFiles/voxel_map_node.dir/src/voxel_map_node.cpp.o
-[ 83%] Built target simulated_lidar_node

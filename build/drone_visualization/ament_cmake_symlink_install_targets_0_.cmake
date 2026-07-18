@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ake/sim_drone/ake_drone_sim/build/drone_visualization/visualization_node" "TARGETS" "visualization_node" "DESTINATION" "lib/drone_visualization")

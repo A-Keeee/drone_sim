@@ -1,1 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/src/drone_dynamics/include/ake_drone_sim/dynamics_model.hpp

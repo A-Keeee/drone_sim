@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="2" failures="0" disabled="0" errors="0" time="0.026" timestamp="2026-07-15T20:01:28" name="AllTests">
-  <testsuite name="Dynamics" tests="2" failures="0" disabled="0" errors="0" time="0.025" timestamp="2026-07-15T20:01:28">
-    <testcase name="EqualMotorsProduceNoTorque" status="run" result="completed" time="0.008" timestamp="2026-07-15T20:01:28" classname="drone_dynamics.Dynamics" />
-    <testcase name="QuaternionRemainsNormalized" status="run" result="completed" time="0.017" timestamp="2026-07-15T20:01:28" classname="drone_dynamics.Dynamics" />
-  </testsuite>
-</testsuites>

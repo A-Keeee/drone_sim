@@ -1,1 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/build/drone_msgs/rosidl_generator_py/drone_msgs/msg/_trajectory_setpoint_s.c

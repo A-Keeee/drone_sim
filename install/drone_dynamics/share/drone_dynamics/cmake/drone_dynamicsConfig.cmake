@@ -1,1 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/build/drone_dynamics/ament_cmake_core/drone_dynamicsConfig.cmake

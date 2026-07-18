@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ake/sim_drone/ake_drone_sim/build/drone_controller/position_controller_node" "TARGETS" "position_controller_node" "RUNTIME_DESTINATION" "lib/drone_controller")

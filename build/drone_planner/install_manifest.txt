@@ -1,3 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/install/drone_planner/lib/libdrone_planner_core.so
-/home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport.cmake
-/home/ake/sim_drone/ake_drone_sim/install/drone_planner/share/drone_planner/cmake/export_drone_plannerExport-noconfig.cmake

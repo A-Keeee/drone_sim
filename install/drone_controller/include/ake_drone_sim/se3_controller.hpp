@@ -1,1 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/src/drone_controller/include/ake_drone_sim/se3_controller.hpp

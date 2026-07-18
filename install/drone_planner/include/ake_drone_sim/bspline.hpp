@@ -1,1 +1,0 @@
-/home/ake/sim_drone/ake_drone_sim/src/drone_planner/include/ake_drone_sim/bspline.hpp
