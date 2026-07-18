@@ -1,0 +1,10 @@
+samples: 3002
+duration_s: 15.003
+final_error_m: 0.0413
+steady_mean_error_last_2s_m: 0.0374
+path_length_m: 2.9722
+maximum_rpm: 5214.8
+rpm_saturation_samples: 0
+first_below_0.3m_s: 3.364
+maximum_overshoot_m: 0.1668
+maximum_abs_roll_pitch_deg: 7.744

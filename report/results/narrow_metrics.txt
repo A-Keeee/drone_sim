@@ -1,0 +1,15 @@
+samples: 10001
+duration_s: 49.999
+final_error_m: 0.0394
+path_length_m: 11.6476
+maximum_rpm: 5577.9
+rpm_saturation_samples: 0
+steady_mean_error_last_2s_m: 0.0345
+first_below_0.3m_s: 16.565
+maximum_overshoot_m: 0.0615
+maximum_abs_roll_pitch_deg: 8.323
+minimum_center_aabb_clearance_m: 0.9384
+vehicle_radius_m: 0.1800
+minimum_body_aabb_clearance_m: 0.7584
+required_safety_distance_m: 0.5000
+clearance_acceptance: PASS

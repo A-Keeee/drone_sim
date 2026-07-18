@@ -1,0 +1,13 @@
+samples: 3289
+duration_s: 16.440
+final_error_m: 0.0674
+path_length_m: 8.9540
+maximum_rpm: 5358.3
+rpm_saturation_samples: 0
+active_goal_mean_error_last_2s_m: 0.4009
+waypoint_segments_recorded: 5
+waypoint_1_minimum_error_m: 0.0404
+waypoint_2_minimum_error_m: 0.0365
+waypoint_3_minimum_error_m: 0.0695
+waypoint_4_minimum_error_m: 0.0558
+waypoint_5_minimum_error_m: 0.0326
