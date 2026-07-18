@@ -2,8 +2,6 @@
 
 一个三维四旋翼仿真工作区。系统包含刚体动力学、模拟 IMU/GPS、ESKF、SE(3) 控制器、三维 voxel map、前向 3D LiDAR、3D A*、B-spline/滚动预测参考、RViz2 和评测脚本。
 
-本项目参考 `IntelligentUAVChampionshipBase/basic_dev/src` 中三个 ROS1 模块的算法结构，但所有节点均使用 ROS2 Humble、`rclcpp`、`ament_cmake` 和 `colcon` 重新实现：
-
 - `pwm_se3_controller`：位置/速度误差、期望合力、期望姿态、SO(3) 姿态误差、力矩控制和 mixer；输出改为电机 RPM。
 - `imu_gps_fusion`：IMU 预测、GPS 位姿更新、15 状态误差状态滤波。
 - `AB_planner`：三维 A*、路径简化、三次 B-spline、弧长投影、受速度/加速度/jerk 限制的滚动预测和安全回退。
