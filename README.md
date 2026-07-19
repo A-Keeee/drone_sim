@@ -15,11 +15,7 @@
 
 ## 1. 项目展示
 
-<!--
-提交前建议替换为真实链接：
-- [PDF 报告](report/AKE_Drone_Sim_Report.pdf)
-- [演示视频](https://...)
--->
+- 演示视频：[Bilibili：AKE Drone Sim 系统演示] https://www.bilibili.com/video/BV1gZK667Egr/?share_source=copy_web&vd_source=cb116156c8ea15d1f812f795d08837b6
 
 ---
 
