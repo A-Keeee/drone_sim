@@ -15,7 +15,7 @@
 
 ## 1. 项目展示
 
-- 演示视频：[Bilibili：AKE Drone Sim 系统演示] https://www.bilibili.com/video/BV1gZK667Egr/?share_source=copy_web&vd_source=cb116156c8ea15d1f812f795d08837b6
+- 演示视频：[Bilibili：AKE Drone Sim 系统演示](https://www.bilibili.com/video/BV1gZK667Egr/)
 
 ---
 
