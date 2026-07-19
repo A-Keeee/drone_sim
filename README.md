@@ -821,18 +821,3 @@ reference_speed = 0.8 m/s
 完整说明、关键 Prompt、AI 产生过的问题和修正过程见 [ai_usage.md](ai_usage.md)。
 
 ---
-
-## 22. 许可证与引用
-
-提交前建议补充开源许可证，例如 MIT License，并在报告中列出参考仓库和算法资料。
-
-使用本项目时，可引用本仓库：
-
-```bibtex
-@software{ake_drone_sim,
-  author = {A-Keeee},
-  title = {AKE Drone Sim: ROS2 Quadrotor Dynamics, Control and 3D Obstacle Avoidance},
-  year = {2026},
-  url = {https://github.com/A-Keeee/drone_sim}
-}
-```
